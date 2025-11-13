@@ -1,0 +1,123 @@
+"use client";
+import React from "react";
+import StudyToolsSection from "../../../src/components/StudyToolsSection";
+import { studyToolsData } from "../../../src/data/studyToolsData";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
+/* ────────────────────── Reusable helpers ────────────────────── */
+const CHECK_ICON =
+  "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='check' class='svg-inline--fa fa-check fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 512 512'%3E%3Cpath fill='%234169E1' d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z'%3E%3C/path%3E%3C/svg%3E";
+
+function Heading({ children, color = "#4169E1" }) {
+  return (
+    <h6
+      className="relative font-semibold text-2xl leading-[1.3] mb-6 inline-block pb-3"
+      style={{
+        color: color,
+        borderBottom: `3px solid ${color}`,
+      }}
+    >
+      {children}
+    </h6>
+  );
+}
+
+/* Optional checklist item (for future use) */
+function CheckItem({ children }) {
+  return (
+    <li className="flex items-start gap-3 mb-3">
+      <img src={CHECK_ICON} alt="check" className="w-5 h-5 mt-1 flex-shrink-0" />
+      <span className="text-base leading-relaxed">{children}</span>
+    </li>
+  );
+}
+
+/* ────────────────────── Page component ────────────────────── */
+export default function NoteTakingPage() {
+  const pathname = usePathname();
+  const slug = pathname.split("/").pop();
+  const toolData = studyToolsData[slug];
+
+  if (!toolData) {
+    return <p className="text-center text-red-500">404 - Not Found</p>;
+  }
+
+  return (
+    <main style={{ backgroundColor: "#FFF7AE" }} className="min-h-screen">
+      {/* ── Dynamic Header ── */}
+      <StudyToolsSection
+        title={toolData.title}
+        description={toolData.description}
+        image={toolData.image}
+      />
+
+      {/* ── Content Section ── */}
+      <section style={{ backgroundColor: "#FFFFFF" }} className="py-20 flex justify-center">
+        <div className="max-w-4xl w-full px-6 md:px-10 text-left">
+          
+          {/* Note-taking Section */}
+          <div className="mb-20 bg-white  p-8 ">
+            <Heading color="#4169E1">Note-taking</Heading>
+            <p className="text-gray-700 leading-relaxed text-[16px] md:text-[17px]">
+              A useful activity that greatly helps assimilation is making notes for
+              yourself. To allow you to make and save your own notes online, we have
+              created an online <strong>Personal Notepad (PEN)</strong> for you. These personal
+              notes are an excellent revision tool when you return to review any of your
+              lessons.
+            </p>
+          </div>
+
+          {/* English-English Dictionary Section */}
+          <div className="mb-20 bg-white p-8">
+            <Heading color="#7B68EE">English-English dictionary & translation</Heading>
+            <p className="text-gray-700 leading-relaxed text-[16px] md:text-[17px] mb-8">
+              To become fluent in English, you must gradually lose your dependency on
+              translating words and phrases into or from your native language. Therefore,
+              you need to make a habit of looking up new words in an English-English
+              dictionary instead of a bilingual one.
+            </p>
+            <p className="text-gray-700 leading-relaxed text-[16px] md:text-[17px]">
+              Of course, sometimes you want a quick translation to be sure you have
+              understood correctly, and that is fine. To help you study efficiently, we
+              have incorporated an English-English dictionary and translation tool into
+              the platform — so you never need to leave your study page.
+            </p>
+          </div>
+
+          {/* CTA Link */}
+          <div className="text-center mt-12">
+            <Link
+              href="/features"
+              className="inline-flex items-center font-semibold text-lg px-8 py-4 rounded-full transition-all shadow-md hover:shadow-xl"
+              style={{
+                backgroundColor: "#4169E1",
+                color: "#FFFFFF",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#7B68EE")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#4169E1")
+              }
+            >
+              View all features
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                className="ml-2"
+              >
+                <path
+                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  fill="currentColor"
+                />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

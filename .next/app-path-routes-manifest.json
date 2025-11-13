@@ -1,0 +1,22 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/dashboard/page": "/dashboard",
+  "/favicon.ico/route": "/favicon.ico",
+  "/features/offline-study/page": "/features/offline-study",
+  "/features/one-to-one-lessons/page": "/features/one-to-one-lessons",
+  "/features/page": "/features",
+  "/features/practice-material/page": "/features/practice-material",
+  "/features/progress-tracking/page": "/features/progress-tracking",
+  "/features/reward-system/page": "/features/reward-system",
+  "/features/study-material/page": "/features/study-material",
+  "/features/study-tools/page": "/features/study-tools",
+  "/features/support-system/page": "/features/support-system",
+  "/features/video-lessons/page": "/features/video-lessons",
+  "/features/voice-recognition/page": "/features/voice-recognition",
+  "/level-guide/page": "/level-guide",
+  "/login/page": "/login",
+  "/membership/page": "/membership",
+  "/page": "/"
+}

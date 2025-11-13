@@ -1,0 +1,3784 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/components/Join.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Join
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+const FadeInDiv = ({ children, className, delay = 0 })=>{
+    _s();
+    const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "FadeInDiv.useEffect": ()=>{
+            const timer = setTimeout({
+                "FadeInDiv.useEffect.timer": ()=>setIsVisible(true)
+            }["FadeInDiv.useEffect.timer"], delay);
+            return ({
+                "FadeInDiv.useEffect": ()=>clearTimeout(timer)
+            })["FadeInDiv.useEffect"];
+        }
+    }["FadeInDiv.useEffect"], [
+        delay
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: `transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${className}`,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/Join.js",
+        lineNumber: 14,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_s(FadeInDiv, "J3yJOyGdBT4L7hs1p1XQYVGMdrY=");
+_c = FadeInDiv;
+function Join() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "relative min-h-screen bg-gradient-to-br from-[#4169E1] via-[#7B68EE] to-[#4169E1] py-24 overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 opacity-10",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0",
+                    style: {
+                        backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,255,255,0.2) 0%, transparent 50%),
+                             radial-gradient(circle at 75% 75%, rgba(255,255,255,0.15) 0%, transparent 50%),
+                             radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 50%)`
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Join.js",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Join.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute top-10 left-10 w-20 h-20 bg-[#FFF7AE]/20 rounded-full blur-2xl animate-pulse"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Join.js",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute bottom-10 right-10 w-32 h-32 bg-[#4169E1]/20 rounded-full blur-3xl animate-pulse",
+                style: {
+                    animationDelay: '1s'
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/Join.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full blur-xl animate-pulse",
+                style: {
+                    animationDelay: '0.5s'
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/Join.js",
+                lineNumber: 45,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-5xl mx-auto text-center px-6 relative z-10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        delay: 100,
+                        className: "flex justify-center mb-6",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-white/20 backdrop-blur-md rounded-full p-4 border-2 border-white/30 shadow-xl animate-bounce",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                className: "text-[#FFF7AE] w-8 h-8"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Join.js",
+                                lineNumber: 55,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Join.js",
+                            lineNumber: 54,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Join.js",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        delay: 200,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-4xl lg:text-6xl font-extrabold mb-6 text-white leading-tight drop-shadow-lg",
+                            children: [
+                                "Ready for a ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[#FFF7AE]",
+                                    children: "fun and successful"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 62,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 63,
+                                    columnNumber: 13
+                                }, this),
+                                "journey to English fluency?"
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Join.js",
+                            lineNumber: 61,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Join.js",
+                        lineNumber: 60,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        delay: 300,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-xl lg:text-2xl mb-8 text-white/95 max-w-3xl mx-auto leading-relaxed",
+                            children: "Join our unique teacher-supported self-study programme today!"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Join.js",
+                            lineNumber: 70,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Join.js",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        delay: 400,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-wrap justify-center gap-4 mb-10",
+                            children: [
+                                'Structured Learning',
+                                'Expert Support',
+                                'Flexible Schedule'
+                            ].map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white/15 backdrop-blur-sm px-5 py-2 rounded-full border border-white/30 text-white font-medium hover:bg-white/25 transition-all duration-300 hover:scale-105 flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
+                                            size: 18,
+                                            className: "text-[#FFF7AE]"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Join.js",
+                                            lineNumber: 83,
+                                            columnNumber: 17
+                                        }, this),
+                                        feature
+                                    ]
+                                }, idx, true, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 79,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Join.js",
+                            lineNumber: 77,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Join.js",
+                        lineNumber: 76,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        delay: 500,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: "group inline-flex items-center gap-3 px-12 py-6 bg-white text-[#4169E1] text-2xl font-bold rounded-2xl hover:bg-[#FFF7AE] transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] relative overflow-hidden",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 94,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "relative z-10",
+                                    children: "Join Programme"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 96,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                    size: 28,
+                                    className: "relative z-10 group-hover:translate-x-2 transition-transform duration-300"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 97,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Join.js",
+                            lineNumber: 92,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Join.js",
+                        lineNumber: 91,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        delay: 600,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-10 flex flex-col sm:flex-row justify-center items-center gap-6 text-white/80 text-sm",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex -space-x-2",
+                                            children: [
+                                                1,
+                                                2,
+                                                3,
+                                                4
+                                            ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-8 h-8 rounded-full bg-gradient-to-br from-[#4169E1] to-[#7B68EE] border-2 border-white flex items-center justify-center text-white font-bold text-xs",
+                                                    children: String.fromCharCode(64 + i)
+                                                }, i, false, {
+                                                    fileName: "[project]/src/components/Join.js",
+                                                    lineNumber: 110,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Join.js",
+                                            lineNumber: 108,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "font-medium",
+                                            children: "Join 10,000+ learners"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Join.js",
+                                            lineNumber: 118,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 107,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "hidden sm:block w-px h-6 bg-white/30"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 121,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex gap-0.5",
+                                            children: [
+                                                1,
+                                                2,
+                                                3,
+                                                4,
+                                                5
+                                            ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: "w-5 h-5 text-[#FFF7AE] fill-current",
+                                                    viewBox: "0 0 20 20",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Join.js",
+                                                        lineNumber: 131,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, i, false, {
+                                                    fileName: "[project]/src/components/Join.js",
+                                                    lineNumber: 126,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Join.js",
+                                            lineNumber: 124,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "font-medium",
+                                            children: "4.9/5 rating"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Join.js",
+                                            lineNumber: 135,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Join.js",
+                                    lineNumber: 123,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Join.js",
+                            lineNumber: 106,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Join.js",
+                        lineNumber: 105,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        delay: 700,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "mt-8 text-white/70 text-sm",
+                            children: "No credit card required • Start your free trial today"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Join.js",
+                            lineNumber: 142,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Join.js",
+                        lineNumber: 141,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/Join.js",
+                lineNumber: 51,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/Join.js",
+        lineNumber: 26,
+        columnNumber: 5
+    }, this);
+}
+_c1 = Join;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "FadeInDiv");
+__turbopack_context__.k.register(_c1, "Join");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/Footer.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Footer
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript) <export default as Facebook>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript) <export default as Youtube>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript) <export default as Globe>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript) <export default as Send>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+// Simple animation component
+const FadeInDiv = ({ children, className, delay = 0 })=>{
+    _s();
+    const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "FadeInDiv.useEffect": ()=>{
+            const timer = setTimeout({
+                "FadeInDiv.useEffect.timer": ()=>setIsVisible(true)
+            }["FadeInDiv.useEffect.timer"], delay);
+            return ({
+                "FadeInDiv.useEffect": ()=>clearTimeout(timer)
+            })["FadeInDiv.useEffect"];
+        }
+    }["FadeInDiv.useEffect"], [
+        delay
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: `transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} ${className}`,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/Footer.js",
+        lineNumber: 16,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_s(FadeInDiv, "J3yJOyGdBT4L7hs1p1XQYVGMdrY=");
+_c = FadeInDiv;
+function Footer() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "bg-gradient-to-br from-[#4169E1] via-[#2d5aad] to-[#1a3a7a] text-white relative overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 opacity-5",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0",
+                    style: {
+                        backgroundImage: `radial-gradient(circle at 30% 20%, rgba(255,255,255,0.3) 0%, transparent 50%),
+                           radial-gradient(circle at 70% 80%, rgba(255,255,255,0.2) 0%, transparent 50%)`
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Footer.js",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-7xl mx-auto px-6 py-16 pt-20 relative z-10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                                className: "flex flex-col items-center md:items-start space-y-6 flex-1",
+                                delay: 100,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/15 transition-all duration-300 hover:scale-105",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            width: "55",
+                                            height: "55",
+                                            viewBox: "0 0 55 55",
+                                            fill: "none",
+                                            xmlns: "http://www.w3.org/2000/svg",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                                    cx: "27.5",
+                                                    cy: "27.5",
+                                                    r: "27.5",
+                                                    fill: "#FFF7AE"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Footer.js",
+                                                    lineNumber: 48,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                                                    x: "27.5",
+                                                    y: "35",
+                                                    fontSize: "24",
+                                                    fontWeight: "bold",
+                                                    fill: "#4169E1",
+                                                    textAnchor: "middle",
+                                                    children: "AL"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Footer.js",
+                                                    lineNumber: 49,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/Footer.js",
+                                            lineNumber: 47,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 46,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-3 text-center md:text-left",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-2 text-[#FFF7AE] group cursor-pointer",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                        size: 20,
+                                                        className: "group-hover:scale-110 transition-transform"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Footer.js",
+                                                        lineNumber: 55,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-lg font-medium group-hover:text-white transition-colors",
+                                                        children: "office@anglo-link.com"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Footer.js",
+                                                        lineNumber: 56,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 54,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "w-full md:w-auto border-2 border-[#7B68EE] text-[#FFF7AE] px-6 py-3 rounded-xl hover:bg-[#7B68EE] hover:text-white transition-all duration-300 font-semibold hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2 group",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
+                                                        size: 18,
+                                                        className: "group-hover:translate-x-1 transition-transform"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Footer.js",
+                                                        lineNumber: 62,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "Contact Us"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 61,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 53,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 45,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "hidden md:block relative",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-px h-40 bg-gradient-to-b from-transparent via-[#7B68EE]/50 to-transparent"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 70,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#7B68EE] rounded-full"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 71,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 69,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                                className: "flex-1 text-center md:text-left space-y-5",
+                                delay: 200,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-2xl font-bold text-[#FFF7AE] mb-4",
+                                        children: "More"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 76,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "space-y-3",
+                                        children: [
+                                            'About',
+                                            'Acceptable Use Policy',
+                                            'Privacy & Cookie Policy',
+                                            'Terms of Use'
+                                        ].map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "#",
+                                                    className: "text-[#FFF7AE] hover:text-white transition-all duration-300 hover:translate-x-2 inline-block group relative",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "relative z-10",
+                                                            children: item
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Footer.js",
+                                                            lineNumber: 84,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "absolute bottom-0 left-0 w-0 h-0.5 bg-[#FFF7AE] group-hover:w-full transition-all duration-300"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Footer.js",
+                                                            lineNumber: 85,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/Footer.js",
+                                                    lineNumber: 80,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, idx, false, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 79,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 75,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "hidden md:block relative",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-px h-40 bg-gradient-to-b from-transparent via-[#7B68EE]/50 to-transparent"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 94,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#7B68EE] rounded-full"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 95,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 93,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                                className: "flex-1 text-center md:text-left space-y-5",
+                                delay: 300,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-2xl font-bold text-[#FFF7AE] mb-4",
+                                        children: "Connect With Us"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 100,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex justify-center md:justify-start gap-4",
+                                        children: [
+                                            {
+                                                Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__["Facebook"],
+                                                color: 'hover:text-[#1877F2]'
+                                            },
+                                            {
+                                                Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__["Youtube"],
+                                                color: 'hover:text-[#FF0000]'
+                                            },
+                                            {
+                                                Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"],
+                                                color: 'hover:text-[#FFF7AE]'
+                                            },
+                                            {
+                                                Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"],
+                                                color: 'hover:text-[#FFFFFF]'
+                                            }
+                                        ].map(({ Icon, color }, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "#",
+                                                className: `bg-white/10 backdrop-blur-sm p-3 rounded-xl ${color} transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg group`,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                    className: "w-6 h-6 group-hover:scale-110 transition-transform"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Footer.js",
+                                                    lineNumber: 113,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, idx, false, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 108,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 101,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-6 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-[#7B68EE]/30",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-[#FFF7AE] mb-3",
+                                                children: "Stay updated with our latest news"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 120,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                        type: "email",
+                                                        placeholder: "Your email",
+                                                        className: "flex-1 px-4 py-2 bg-white/10 border border-[#7B68EE]/30 rounded-lg text-white placeholder-[#7B68EE]/50 focus:outline-none focus:border-[#FFF7AE] transition-all"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Footer.js",
+                                                        lineNumber: 122,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        className: "px-4 py-2 bg-gradient-to-r from-[#4169E1] to-[#7B68EE] rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
+                                                            size: 18
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Footer.js",
+                                                            lineNumber: 128,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Footer.js",
+                                                        lineNumber: 127,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 121,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 119,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 99,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/Footer.js",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-12 mb-8 relative",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute inset-0 flex items-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-full border-t border-[#7B68EE]/30"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.js",
+                                    lineNumber: 138,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 137,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative flex justify-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-gradient-to-br from-[#4169E1] to-[#1a3a7a] px-4",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-2 h-2 bg-[#7B68EE] rounded-full animate-pulse"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 143,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-2 h-2 bg-[#4169E1] rounded-full animate-pulse",
+                                                style: {
+                                                    animationDelay: '0.2s'
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 144,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-2 h-2 bg-[#FFF7AE] rounded-full animate-pulse",
+                                                style: {
+                                                    animationDelay: '0.4s'
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Footer.js",
+                                                lineNumber: 145,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/Footer.js",
+                                        lineNumber: 142,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.js",
+                                    lineNumber: 141,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 140,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/Footer.js",
+                        lineNumber: 136,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
+                        className: "text-center space-y-3 mb-8",
+                        delay: 400,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-2xl font-bold text-[#FFF7AE]",
+                                children: "VirHom"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 153,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[#FFF7AE] italic",
+                                children: "Your journey to English fluency starts here"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.js",
+                                lineNumber: 154,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/Footer.js",
+                        lineNumber: 152,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/Footer.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "bg-gradient-to-r from-[#1a3a7a] via-[#152d63] to-[#1a3a7a] py-5 text-center relative border-t border-[#7B68EE]/20",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative z-10",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[#7B68EE] text-sm font-medium",
+                            children: "VirHom Languages © 2025 All Rights Reserved"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Footer.js",
+                            lineNumber: 161,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[#4169E1] text-xs mt-1",
+                            children: "Crafted with passion for language learners worldwide"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Footer.js",
+                            lineNumber: 164,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Footer.js",
+                    lineNumber: 160,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.js",
+                lineNumber: 159,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FFF7AE] to-transparent"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.js",
+                lineNumber: 171,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/Footer.js",
+        lineNumber: 28,
+        columnNumber: 5
+    }, this);
+} // "use client";
+ // import React, { useState, useEffect } from 'react';
+ // import { Facebook, Youtube, Globe, X, Mail, Send } from "lucide-react";
+ // // Simple animation component
+ // const FadeInDiv = ({ children, className, delay = 0 }) => {
+ //   const [isVisible, setIsVisible] = useState(false);
+ //   useEffect(() => {
+ //     const timer = setTimeout(() => setIsVisible(true), delay);
+ //     return () => clearTimeout(timer);
+ //   }, [delay]);
+ //   return (
+ //     <div
+ //       className={`transition-all duration-700 ease-out ${
+ //         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+ //       } ${className}`}
+ //     >
+ //       {children}
+ //     </div>
+ //   );
+ // };
+ // function Footer() {
+ //   return (
+ //     <div className="bg-gradient-to-br from-[#6B4F4F] via-[#5d4343] to-[#4a3535] text-white relative overflow-hidden">
+ //       {/* Decorative Background Pattern */}
+ //       <div className="absolute inset-0 opacity-5">
+ //         <div className="absolute inset-0" style={{
+ //           backgroundImage: `radial-gradient(circle at 30% 20%, rgba(255,255,255,0.3) 0%, transparent 50%),
+ //                            radial-gradient(circle at 70% 80%, rgba(255,255,255,0.2) 0%, transparent 50%)`
+ //         }}></div>
+ //       </div>
+ //       {/* Top Decorative Wave
+ //       <div className="absolute top-0 left-0 right-0">
+ //         <svg
+ //           viewBox="0 0 1440 60"
+ //           className="w-full"
+ //           preserveAspectRatio="none"
+ //         >
+ //           <path
+ //             fill="#F5F1ED"
+ //             d="M0,32L48,37.3C96,43,192,53,288,48C384,43,480,21,576,16C672,11,768,21,864,26.7C960,32,1056,32,1152,26.7C1248,21,1344,11,1392,5.3L1440,0L1440,0L0,0Z"
+ //           ></path>
+ //         </svg>
+ //       </div> */}
+ //       {/* Main Content */}
+ //       <div className="max-w-7xl mx-auto px-6 py-16 pt-20 relative z-10">
+ //         <div className="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8">
+ //           {/* Left Section - Brand */}
+ //           <FadeInDiv className="flex flex-col items-center md:items-start space-y-6 flex-1" delay={100}>
+ //             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+ //               <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+ //                 <circle cx="27.5" cy="27.5" r="27.5" fill="#DCC7AA"/>
+ //                 <text x="27.5" y="35" fontSize="24" fontWeight="bold" fill="#6B4F4F" textAnchor="middle">AL</text>
+ //               </svg>
+ //             </div>
+ //             <div className="space-y-3 text-center md:text-left">
+ //               <div className="flex items-center gap-2 text-[#DCC7AA] group cursor-pointer">
+ //                 <Mail size={20} className="group-hover:scale-110 transition-transform" />
+ //                 <p className="text-lg font-medium group-hover:text-white transition-colors">
+ //                   office@anglo-link.com
+ //                 </p>
+ //               </div>
+ //               <button className="w-full md:w-auto border-2 border-[#CBB59D] text-[#DCC7AA] px-6 py-3 rounded-xl hover:bg-[#CBB59D] hover:text-[#6B4F4F] transition-all duration-300 font-semibold hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2 group">
+ //                 <Send size={18} className="group-hover:translate-x-1 transition-transform" />
+ //                 Contact Us
+ //               </button>
+ //             </div>
+ //           </FadeInDiv>
+ //           {/* Decorative Divider */}
+ //           <div className="hidden md:block relative">
+ //             <div className="w-px h-40 bg-gradient-to-b from-transparent via-[#CBB59D]/50 to-transparent"></div>
+ //             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#CBB59D] rounded-full"></div>
+ //           </div>
+ //           {/* Middle Section - Links */}
+ //           <FadeInDiv className="flex-1 text-center md:text-left space-y-5" delay={200}>
+ //             <h3 className="text-2xl font-bold text-[#DCC7AA] mb-4">More</h3>
+ //             <ul className="space-y-3">
+ //               {['About', 'Acceptable Use Policy', 'Privacy & Cookie Policy', 'Terms of Use'].map((item, idx) => (
+ //                 <li key={idx}>
+ //                   <a 
+ //                     href="#" 
+ //                     className="text-[#CBB59D] hover:text-white transition-all duration-300 hover:translate-x-2 inline-block group relative"
+ //                   >
+ //                     <span className="relative z-10">{item}</span>
+ //                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#DCC7AA] group-hover:w-full transition-all duration-300"></span>
+ //                   </a>
+ //                 </li>
+ //               ))}
+ //             </ul>
+ //           </FadeInDiv>
+ //           {/* Decorative Divider */}
+ //           <div className="hidden md:block relative">
+ //             <div className="w-px h-40 bg-gradient-to-b from-transparent via-[#CBB59D]/50 to-transparent"></div>
+ //             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#CBB59D] rounded-full"></div>
+ //           </div>
+ //           {/* Right Section - Social */}
+ //           <FadeInDiv className="flex-1 text-center md:text-left space-y-5" delay={300}>
+ //             <h3 className="text-2xl font-bold text-[#DCC7AA] mb-4">Connect With Us</h3>
+ //             <div className="flex justify-center md:justify-start gap-4">
+ //               {[
+ //                 { Icon: Facebook, color: 'hover:text-[#1877F2]' },
+ //                 { Icon: Youtube, color: 'hover:text-[#FF0000]' },
+ //                 { Icon: Globe, color: 'hover:text-[#DCC7AA]' },
+ //                 { Icon: X, color: 'hover:text-[#000000]' }
+ //               ].map(({ Icon, color }, idx) => (
+ //                 <a
+ //                   key={idx}
+ //                   href="#"
+ //                   className={`bg-white/10 backdrop-blur-sm p-3 rounded-xl ${color} transition-all duration-300 hover:bg-white hover:scale-110 hover:shadow-lg group`}
+ //                 >
+ //                   <Icon className="w-6 h-6 group-hover:scale-110 transition-transform" />
+ //                 </a>
+ //               ))}
+ //             </div>
+ //             {/* Newsletter Signup */}
+ //             <div className="mt-6 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-[#CBB59D]/30">
+ //               <p className="text-sm text-[#DCC7AA] mb-3">Stay updated with our latest news</p>
+ //               <div className="flex gap-2">
+ //                 <input 
+ //                   type="email" 
+ //                   placeholder="Your email" 
+ //                   className="flex-1 px-4 py-2 bg-white/10 border border-[#CBB59D]/30 rounded-lg text-white placeholder-[#CBB59D]/50 focus:outline-none focus:border-[#DCC7AA] transition-all"
+ //                 />
+ //                 <button className="px-4 py-2 bg-gradient-to-r from-[#A27B5C] to-[#8B7355] rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+ //                   <Send size={18} />
+ //                 </button>
+ //               </div>
+ //             </div>
+ //           </FadeInDiv>
+ //         </div>
+ //         {/* Decorative Line */}
+ //         <div className="mt-12 mb-8 relative">
+ //           <div className="absolute inset-0 flex items-center">
+ //             <div className="w-full border-t border-[#CBB59D]/30"></div>
+ //           </div>
+ //           <div className="relative flex justify-center">
+ //             <div className="bg-gradient-to-br from-[#6B4F4F] to-[#4a3535] px-4">
+ //               <div className="flex gap-2">
+ //                 <div className="w-2 h-2 bg-[#CBB59D] rounded-full animate-pulse"></div>
+ //                 <div className="w-2 h-2 bg-[#A27B5C] rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+ //                 <div className="w-2 h-2 bg-[#DCC7AA] rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+ //               </div>
+ //             </div>
+ //           </div>
+ //         </div>
+ //         {/* Tagline */}
+ //         <FadeInDiv className="text-center space-y-3 mb-8" delay={400}>
+ //           <h4 className="text-2xl font-bold text-[#DCC7AA]">Anglo-Link</h4>
+ //           <p className="text-[#CBB59D] italic">Your journey to English fluency starts here</p>
+ //         </FadeInDiv>
+ //       </div>
+ //       {/* Bottom Bar */}
+ //       <div className="bg-gradient-to-r from-[#4a3535] via-[#3d2f2f] to-[#4a3535] py-5 text-center relative border-t border-[#CBB59D]/20">
+ //         <div className="relative z-10">
+ //           <p className="text-[#CBB59D] text-sm font-medium">
+ //             Anglo-Link Languages Ltd © 2025 All Rights Reserved
+ //           </p>
+ //           <p className="text-[#A27B5C] text-xs mt-1">
+ //             Crafted with passion for language learners worldwide
+ //           </p>
+ //         </div>
+ //       </div>
+ //       {/* Bottom Decorative Element */}
+ //       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#DCC7AA] to-transparent"></div>
+ //     </div>
+ //   );
+ // }
+ // export default Footer;
+ // import React from 'react'
+ // import Image from "next/image";
+ // import { Facebook, Youtube,Globe ,X } from "lucide-react";
+ // function Footer() {
+ //   return (
+ //     <div className="bg-[#414146] text-white">
+ //         {/* Top Section */}
+ //         <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-start gap-10 md:gap-6 relative">
+ //           {/* Left Section */}
+ //           <div className="flex flex-col items-center md:items-start space-y-4 flex-1">
+ //             <Image
+ //               src="https://anglo-link.com/images/anglolink_logo_white_comma.svg"
+ //               alt="Anglo-Link Logo"
+ //               width={55}
+ //               height={55}
+ //             />
+ //             <p className="text-lg font-semibold">office@anglo-link.com</p>
+ //             <button className="border border-white px-5 py-2 rounded hover:bg-white hover:text-[#414146] transition">
+ //               Contact Us
+ //             </button>
+ //           </div>
+ //           {/* Vertical Divider */}
+ //           <div className="hidden md:block w-px bg-gray-500 h-32 mx-4"></div>
+ //           {/* Middle Section */}
+ //           <div className="flex-1 text-center md:text-left space-y-3">
+ //             <h3 className="text-lg font-semibold">More</h3>
+ //             <ul className="space-y-2 text-gray-300">
+ //               <li>
+ //                 <a href="#" className="hover:text-white">
+ //                   About
+ //                 </a>
+ //               </li>
+ //               <li>
+ //                 <a href="#" className="hover:text-white">
+ //                   Acceptable Use Policy
+ //                 </a>
+ //               </li>
+ //               <li>
+ //                 <a href="#" className="hover:text-white">
+ //                   Privacy & Cookie Policy
+ //                 </a>
+ //               </li>
+ //               <li>
+ //                 <a href="#" className="hover:text-white">
+ //                   Terms of Use
+ //                 </a>
+ //               </li>
+ //             </ul>
+ //           </div>
+ //           {/* Right Section */}
+ //           <div className="flex-1 text-center md:text-left space-y-3">
+ //             <h3 className="text-lg font-semibold">Social</h3>
+ //             <div className="flex justify-center md:justify-start gap-4 text-gray-400">
+ //               <a href="#" className="hover:text-white">
+ //                 <Facebook className="w-6 h-6" />
+ //               </a>
+ //               <a href="#" className="hover:text-white">
+ //                 <Youtube className="w-6 h-6" />
+ //               </a>
+ //               <a href="#" className="hover:text-white">
+ //                 <Globe className="w-6 h-6" />
+ //               </a>
+ //               <a href="#" className="hover:text-white">
+ //                 <X className="w-6 h-6" />
+ //               </a>
+ //             </div>
+ //           </div>
+ //         </div>
+ //         {/* Bottom Bar */}
+ //         <div className="bg-[#3b3b3f] py-4 text-center text-gray-300 text-sm">
+ //           Anglo-Link Languages Ltd © 2025 All Rights Reserved
+ //         </div>
+ //       </div>
+ //   )
+ // }
+ // export default Footer
+_c1 = Footer;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "FadeInDiv");
+__turbopack_context__.k.register(_c1, "Footer");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/SessionProvider.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>SessionProvider
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/react/index.js [app-client] (ecmascript)");
+"use client";
+;
+;
+function SessionProvider({ children, session }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SessionProvider"], {
+        session: session,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/SessionProvider.js",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
+}
+_c = SessionProvider;
+var _c;
+__turbopack_context__.k.register(_c, "SessionProvider");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/node_modules/next/dist/compiled/react/cjs/react-jsx-dev-runtime.development.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+/**
+ * @license React
+ * react-jsx-dev-runtime.development.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+"use strict";
+"production" !== ("TURBOPACK compile-time value", "development") && function() {
+    function getComponentNameFromType(type) {
+        if (null == type) return null;
+        if ("function" === typeof type) return type.$$typeof === REACT_CLIENT_REFERENCE ? null : type.displayName || type.name || null;
+        if ("string" === typeof type) return type;
+        switch(type){
+            case REACT_FRAGMENT_TYPE:
+                return "Fragment";
+            case REACT_PROFILER_TYPE:
+                return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+                return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+                return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+                return "SuspenseList";
+            case REACT_ACTIVITY_TYPE:
+                return "Activity";
+            case REACT_VIEW_TRANSITION_TYPE:
+                return "ViewTransition";
+        }
+        if ("object" === typeof type) switch("number" === typeof type.tag && console.error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), type.$$typeof){
+            case REACT_PORTAL_TYPE:
+                return "Portal";
+            case REACT_CONTEXT_TYPE:
+                return type.displayName || "Context";
+            case REACT_CONSUMER_TYPE:
+                return (type._context.displayName || "Context") + ".Consumer";
+            case REACT_FORWARD_REF_TYPE:
+                var innerType = type.render;
+                type = type.displayName;
+                type || (type = innerType.displayName || innerType.name || "", type = "" !== type ? "ForwardRef(" + type + ")" : "ForwardRef");
+                return type;
+            case REACT_MEMO_TYPE:
+                return innerType = type.displayName || null, null !== innerType ? innerType : getComponentNameFromType(type.type) || "Memo";
+            case REACT_LAZY_TYPE:
+                innerType = type._payload;
+                type = type._init;
+                try {
+                    return getComponentNameFromType(type(innerType));
+                } catch (x) {}
+        }
+        return null;
+    }
+    function testStringCoercion(value) {
+        return "" + value;
+    }
+    function checkKeyStringCoercion(value) {
+        try {
+            testStringCoercion(value);
+            var JSCompiler_inline_result = !1;
+        } catch (e) {
+            JSCompiler_inline_result = !0;
+        }
+        if (JSCompiler_inline_result) {
+            JSCompiler_inline_result = console;
+            var JSCompiler_temp_const = JSCompiler_inline_result.error;
+            var JSCompiler_inline_result$jscomp$0 = "function" === typeof Symbol && Symbol.toStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            JSCompiler_temp_const.call(JSCompiler_inline_result, "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.", JSCompiler_inline_result$jscomp$0);
+            return testStringCoercion(value);
+        }
+    }
+    function getTaskName(type) {
+        if (type === REACT_FRAGMENT_TYPE) return "<>";
+        if ("object" === typeof type && null !== type && type.$$typeof === REACT_LAZY_TYPE) return "<...>";
+        try {
+            var name = getComponentNameFromType(type);
+            return name ? "<" + name + ">" : "<...>";
+        } catch (x) {
+            return "<...>";
+        }
+    }
+    function getOwner() {
+        var dispatcher = ReactSharedInternals.A;
+        return null === dispatcher ? null : dispatcher.getOwner();
+    }
+    function UnknownOwner() {
+        return Error("react-stack-top-frame");
+    }
+    function hasValidKey(config) {
+        if (hasOwnProperty.call(config, "key")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+            if (getter && getter.isReactWarning) return !1;
+        }
+        return void 0 !== config.key;
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+        function warnAboutAccessingKey() {
+            specialPropKeyWarningShown || (specialPropKeyWarningShown = !0, console.error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)", displayName));
+        }
+        warnAboutAccessingKey.isReactWarning = !0;
+        Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: !0
+        });
+    }
+    function elementRefGetterWithDeprecationWarning() {
+        var componentName = getComponentNameFromType(this.type);
+        didWarnAboutElementRef[componentName] || (didWarnAboutElementRef[componentName] = !0, console.error("Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."));
+        componentName = this.props.ref;
+        return void 0 !== componentName ? componentName : null;
+    }
+    function ReactElement(type, key, props, owner, debugStack, debugTask) {
+        var refProp = props.ref;
+        type = {
+            $$typeof: REACT_ELEMENT_TYPE,
+            type: type,
+            key: key,
+            props: props,
+            _owner: owner
+        };
+        null !== (void 0 !== refProp ? refProp : null) ? Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            get: elementRefGetterWithDeprecationWarning
+        }) : Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            value: null
+        });
+        type._store = {};
+        Object.defineProperty(type._store, "validated", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: 0
+        });
+        Object.defineProperty(type, "_debugInfo", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: null
+        });
+        Object.defineProperty(type, "_debugStack", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: debugStack
+        });
+        Object.defineProperty(type, "_debugTask", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: debugTask
+        });
+        Object.freeze && (Object.freeze(type.props), Object.freeze(type));
+        return type;
+    }
+    function jsxDEVImpl(type, config, maybeKey, isStaticChildren, debugStack, debugTask) {
+        var children = config.children;
+        if (void 0 !== children) if (isStaticChildren) if (isArrayImpl(children)) {
+            for(isStaticChildren = 0; isStaticChildren < children.length; isStaticChildren++)validateChildKeys(children[isStaticChildren]);
+            Object.freeze && Object.freeze(children);
+        } else console.error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+        else validateChildKeys(children);
+        if (hasOwnProperty.call(config, "key")) {
+            children = getComponentNameFromType(type);
+            var keys = Object.keys(config).filter(function(k) {
+                return "key" !== k;
+            });
+            isStaticChildren = 0 < keys.length ? "{key: someKey, " + keys.join(": ..., ") + ": ...}" : "{key: someKey}";
+            didWarnAboutKeySpread[children + isStaticChildren] || (keys = 0 < keys.length ? "{" + keys.join(": ..., ") + ": ...}" : "{}", console.error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', isStaticChildren, children, keys, children), didWarnAboutKeySpread[children + isStaticChildren] = !0);
+        }
+        children = null;
+        void 0 !== maybeKey && (checkKeyStringCoercion(maybeKey), children = "" + maybeKey);
+        hasValidKey(config) && (checkKeyStringCoercion(config.key), children = "" + config.key);
+        if ("key" in config) {
+            maybeKey = {};
+            for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
+        } else maybeKey = config;
+        children && defineKeyPropWarningGetter(maybeKey, "function" === typeof type ? type.displayName || type.name || "Unknown" : type);
+        return ReactElement(type, children, maybeKey, getOwner(), debugStack, debugTask);
+    }
+    function validateChildKeys(node) {
+        isValidElement(node) ? node._store && (node._store.validated = 1) : "object" === typeof node && null !== node && node.$$typeof === REACT_LAZY_TYPE && ("fulfilled" === node._payload.status ? isValidElement(node._payload.value) && node._payload.value._store && (node._payload.value._store.validated = 1) : node._store && (node._store.validated = 1));
+    }
+    function isValidElement(object) {
+        return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    var React = __turbopack_context__.r("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+        return null;
+    };
+    React = {
+        react_stack_bottom_frame: function(callStackForError) {
+            return callStackForError();
+        }
+    };
+    var specialPropKeyWarningShown;
+    var didWarnAboutElementRef = {};
+    var unknownOwnerDebugStack = React.react_stack_bottom_frame.bind(React, UnknownOwner)();
+    var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
+    var didWarnAboutKeySpread = {};
+    exports.Fragment = REACT_FRAGMENT_TYPE;
+    exports.jsxDEV = function(type, config, maybeKey, isStaticChildren) {
+        var trackActualOwner = 1e4 > ReactSharedInternals.recentlyCreatedOwnerStacks++;
+        if (trackActualOwner) {
+            var previousStackTraceLimit = Error.stackTraceLimit;
+            Error.stackTraceLimit = 10;
+            var debugStackDEV = Error("react-stack-top-frame");
+            Error.stackTraceLimit = previousStackTraceLimit;
+        } else debugStackDEV = unknownOwnerDebugStack;
+        return jsxDEVImpl(type, config, maybeKey, isStaticChildren, debugStackDEV, trackActualOwner ? createTask(getTaskName(type)) : unknownOwnerDebugTask);
+    };
+}();
+}),
+"[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+'use strict';
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+else {
+    module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/compiled/react/cjs/react-jsx-dev-runtime.development.js [app-client] (ecmascript)");
+}
+}),
+"[project]/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "hasA11yProp",
+    ()=>hasA11yProp,
+    "mergeClasses",
+    ()=>mergeClasses,
+    "toCamelCase",
+    ()=>toCamelCase,
+    "toKebabCase",
+    ()=>toKebabCase,
+    "toPascalCase",
+    ()=>toPascalCase
+]);
+const toKebabCase = (string)=>string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+const toCamelCase = (string)=>string.replace(/^([A-Z])|[\s-_]+(\w)/g, (match, p1, p2)=>p2 ? p2.toUpperCase() : p1.toLowerCase());
+const toPascalCase = (string)=>{
+    const camelCase = toCamelCase(string);
+    return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
+};
+const mergeClasses = (...classes)=>classes.filter((className, index, array)=>{
+        return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
+    }).join(" ").trim();
+const hasA11yProp = (props)=>{
+    for(const prop in props){
+        if (prop.startsWith("aria-") || prop === "role" || prop === "title") {
+            return true;
+        }
+    }
+};
+;
+ //# sourceMappingURL=utils.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/defaultAttributes.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>defaultAttributes
+]);
+var defaultAttributes = {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+};
+;
+ //# sourceMappingURL=defaultAttributes.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/Icon.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Icon
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/defaultAttributes.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-client] (ecmascript)");
+;
+;
+;
+const Icon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(({ color = "currentColor", size = 24, strokeWidth = 2, absoluteStrokeWidth, className = "", children, iconNode, ...rest }, ref)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])("svg", {
+        ref,
+        ...__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
+        width: size,
+        height: size,
+        stroke: color,
+        strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mergeClasses"])("lucide", className),
+        ...!children && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["hasA11yProp"])(rest) && {
+            "aria-hidden": "true"
+        },
+        ...rest
+    }, [
+        ...iconNode.map(([tag, attrs])=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])(tag, attrs)),
+        ...Array.isArray(children) ? children : [
+            children
+        ]
+    ]));
+;
+ //# sourceMappingURL=Icon.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>createLucideIcon
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/Icon.js [app-client] (ecmascript)");
+;
+;
+;
+const createLucideIcon = (iconName, iconNode)=>{
+    const Component = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            ref,
+            iconNode,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mergeClasses"])(`lucide-${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toKebabCase"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toPascalCase"])(iconName))}`, `lucide-${iconName}`, className),
+            ...props
+        }));
+    Component.displayName = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toPascalCase"])(iconName);
+    return Component;
+};
+;
+ //# sourceMappingURL=createLucideIcon.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>ArrowRight
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M5 12h14",
+            key: "1ays0h"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m12 5 7 7-7 7",
+            key: "xquz4c"
+        }
+    ]
+];
+const ArrowRight = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("arrow-right", __iconNode);
+;
+ //# sourceMappingURL=arrow-right.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ArrowRight",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Sparkles
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z",
+            key: "1s2grr"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M20 2v4",
+            key: "1rf3ol"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M22 4h-4",
+            key: "gwowj6"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "4",
+            cy: "20",
+            r: "2",
+            key: "6kqj1y"
+        }
+    ]
+];
+const Sparkles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("sparkles", __iconNode);
+;
+ //# sourceMappingURL=sparkles.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Sparkles",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>CircleCheckBig
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M21.801 10A10 10 0 1 1 17 3.335",
+            key: "yps3ct"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m9 11 3 3L22 4",
+            key: "1pflzl"
+        }
+    ]
+];
+const CircleCheckBig = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("circle-check-big", __iconNode);
+;
+ //# sourceMappingURL=circle-check-big.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "CheckCircle",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Facebook
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
+            key: "1jg4f8"
+        }
+    ]
+];
+const Facebook = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("facebook", __iconNode);
+;
+ //# sourceMappingURL=facebook.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript) <export default as Facebook>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Facebook",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Youtube
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17",
+            key: "1q2vi4"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m10 15 5-3-5-3z",
+            key: "1jp15x"
+        }
+    ]
+];
+const Youtube = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("youtube", __iconNode);
+;
+ //# sourceMappingURL=youtube.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript) <export default as Youtube>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Youtube",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Globe
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "12",
+            r: "10",
+            key: "1mglay"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20",
+            key: "13o1zl"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M2 12h20",
+            key: "9i4pu4"
+        }
+    ]
+];
+const Globe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("globe", __iconNode);
+;
+ //# sourceMappingURL=globe.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript) <export default as Globe>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Globe",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>X
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M18 6 6 18",
+            key: "1bl5f8"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m6 6 12 12",
+            key: "d8bk6v"
+        }
+    ]
+];
+const X = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("x", __iconNode);
+;
+ //# sourceMappingURL=x.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "X",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Mail
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7",
+            key: "132q7q"
+        }
+    ],
+    [
+        "rect",
+        {
+            x: "2",
+            y: "4",
+            width: "20",
+            height: "16",
+            rx: "2",
+            key: "izxlao"
+        }
+    ]
+];
+const Mail = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("mail", __iconNode);
+;
+ //# sourceMappingURL=mail.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Mail",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Send
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
+            key: "1ffxy3"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m21.854 2.147-10.94 10.939",
+            key: "12cjpa"
+        }
+    ]
+];
+const Send = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("send", __iconNode);
+;
+ //# sourceMappingURL=send.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript) <export default as Send>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Send",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/@babel/runtime/helpers/interopRequireDefault.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+        "default": e
+    };
+}
+module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/typeof.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _typeof(o) {
+    "@babel/helpers - typeof";
+    return module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o) {
+        return typeof o;
+    } : function(o) {
+        return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports, _typeof(o);
+}
+module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/OverloadYield.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _OverloadYield(e, d) {
+    this.v = e, this.k = d;
+}
+module.exports = _OverloadYield, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regeneratorDefine.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _regeneratorDefine(e, r, n, t) {
+    var i = Object.defineProperty;
+    try {
+        i({}, "", {});
+    } catch (e) {
+        i = 0;
+    }
+    module.exports = _regeneratorDefine = function regeneratorDefine(e, r, n, t) {
+        function o(r, n) {
+            _regeneratorDefine(e, r, function(e) {
+                return this._invoke(r, n, e);
+            });
+        }
+        r ? i ? i(e, r, {
+            value: n,
+            enumerable: !t,
+            configurable: !t,
+            writable: !t
+        }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2));
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports, _regeneratorDefine(e, r, n, t);
+}
+module.exports = _regeneratorDefine, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regenerator.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var regeneratorDefine = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorDefine.js [app-client] (ecmascript)");
+function _regenerator() {
+    /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag";
+    function i(r, n, o, i) {
+        var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype);
+        return regeneratorDefine(u, "_invoke", function(r, n, o) {
+            var i, c, u, f = 0, p = o || [], y = !1, G = {
+                p: 0,
+                n: 0,
+                v: e,
+                a: d,
+                f: d.bind(e, 4),
+                d: function d(t, r) {
+                    return i = t, c = 0, u = e, G.n = r, a;
+                }
+            };
+            function d(r, n) {
+                for(c = r, u = n, t = 0; !y && f && !o && t < p.length; t++){
+                    var o, i = p[t], d = G.p, l = i[2];
+                    r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0));
+                }
+                if (o || r > 1) return a;
+                throw y = !0, n;
+            }
+            return function(o, p, l) {
+                if (f > 1) throw TypeError("Generator is already running");
+                for(y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;){
+                    i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u);
+                    try {
+                        if (f = 2, i) {
+                            if (c || (o = "next"), t = i[o]) {
+                                if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object");
+                                if (!t.done) return t;
+                                u = t.value, c < 2 && (c = 0);
+                            } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1);
+                            i = e;
+                        } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break;
+                    } catch (t) {
+                        i = e, c = 1, u = t;
+                    } finally{
+                        f = 1;
+                    }
+                }
+                return {
+                    value: t,
+                    done: y
+                };
+            };
+        }(r, o, i), !0), u;
+    }
+    var a = {};
+    function Generator() {}
+    function GeneratorFunction() {}
+    function GeneratorFunctionPrototype() {}
+    t = Object.getPrototypeOf;
+    var c = [][n] ? t(t([][n]())) : (regeneratorDefine(t = {}, n, function() {
+        return this;
+    }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c);
+    function f(e) {
+        return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, regeneratorDefine(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e;
+    }
+    return GeneratorFunction.prototype = GeneratorFunctionPrototype, regeneratorDefine(u, "constructor", GeneratorFunctionPrototype), regeneratorDefine(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", regeneratorDefine(GeneratorFunctionPrototype, o, "GeneratorFunction"), regeneratorDefine(u), regeneratorDefine(u, o, "Generator"), regeneratorDefine(u, n, function() {
+        return this;
+    }), regeneratorDefine(u, "toString", function() {
+        return "[object Generator]";
+    }), (module.exports = _regenerator = function _regenerator() {
+        return {
+            w: i,
+            m: f
+        };
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports)();
+}
+module.exports = _regenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var OverloadYield = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/OverloadYield.js [app-client] (ecmascript)");
+var regeneratorDefine = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorDefine.js [app-client] (ecmascript)");
+function AsyncIterator(t, e) {
+    function n(r, o, i, f) {
+        try {
+            var c = t[r](o), u = c.value;
+            return u instanceof OverloadYield ? e.resolve(u.v).then(function(t) {
+                n("next", t, i, f);
+            }, function(t) {
+                n("throw", t, i, f);
+            }) : e.resolve(u).then(function(t) {
+                c.value = t, i(c);
+            }, function(t) {
+                return n("throw", t, i, f);
+            });
+        } catch (t) {
+            f(t);
+        }
+    }
+    var r;
+    this.next || (regeneratorDefine(AsyncIterator.prototype), regeneratorDefine(AsyncIterator.prototype, "function" == typeof Symbol && Symbol.asyncIterator || "@asyncIterator", function() {
+        return this;
+    })), regeneratorDefine(this, "_invoke", function(t, o, i) {
+        function f() {
+            return new e(function(e, r) {
+                n(t, i, e, r);
+            });
+        }
+        return r = r ? r.then(f, f) : f();
+    }, !0);
+}
+module.exports = AsyncIterator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var regenerator = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regenerator.js [app-client] (ecmascript)");
+var regeneratorAsyncIterator = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js [app-client] (ecmascript)");
+function _regeneratorAsyncGen(r, e, t, o, n) {
+    return new regeneratorAsyncIterator(regenerator().w(r, e, t, o), n || Promise);
+}
+module.exports = _regeneratorAsyncGen, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regeneratorAsync.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var regeneratorAsyncGen = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js [app-client] (ecmascript)");
+function _regeneratorAsync(n, e, r, t, o) {
+    var a = regeneratorAsyncGen(n, e, r, t, o);
+    return a.next().then(function(n) {
+        return n.done ? n.value : a.next();
+    });
+}
+module.exports = _regeneratorAsync, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regeneratorKeys.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _regeneratorKeys(e) {
+    var n = Object(e), r = [];
+    for(var t in n)r.unshift(t);
+    return function e() {
+        for(; r.length;)if ((t = r.pop()) in n) return e.value = t, e.done = !1, e;
+        return e.done = !0, e;
+    };
+}
+module.exports = _regeneratorKeys, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regeneratorValues.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var _typeof = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/typeof.js [app-client] (ecmascript)")["default"];
+function _regeneratorValues(e) {
+    if (null != e) {
+        var t = e["function" == typeof Symbol && Symbol.iterator || "@@iterator"], r = 0;
+        if (t) return t.call(e);
+        if ("function" == typeof e.next) return e;
+        if (!isNaN(e.length)) return {
+            next: function next() {
+                return e && r >= e.length && (e = void 0), {
+                    value: e && e[r++],
+                    done: !e
+                };
+            }
+        };
+    }
+    throw new TypeError(_typeof(e) + " is not iterable");
+}
+module.exports = _regeneratorValues, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/regeneratorRuntime.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var OverloadYield = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/OverloadYield.js [app-client] (ecmascript)");
+var regenerator = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regenerator.js [app-client] (ecmascript)");
+var regeneratorAsync = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorAsync.js [app-client] (ecmascript)");
+var regeneratorAsyncGen = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js [app-client] (ecmascript)");
+var regeneratorAsyncIterator = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js [app-client] (ecmascript)");
+var regeneratorKeys = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorKeys.js [app-client] (ecmascript)");
+var regeneratorValues = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorValues.js [app-client] (ecmascript)");
+function _regeneratorRuntime() {
+    "use strict";
+    var r = regenerator(), e = r.m(_regeneratorRuntime), t = (Object.getPrototypeOf ? Object.getPrototypeOf(e) : e.__proto__).constructor;
+    function n(r) {
+        var e = "function" == typeof r && r.constructor;
+        return !!e && (e === t || "GeneratorFunction" === (e.displayName || e.name));
+    }
+    var o = {
+        "throw": 1,
+        "return": 2,
+        "break": 3,
+        "continue": 3
+    };
+    function a(r) {
+        var e, t;
+        return function(n) {
+            e || (e = {
+                stop: function stop() {
+                    return t(n.a, 2);
+                },
+                "catch": function _catch() {
+                    return n.v;
+                },
+                abrupt: function abrupt(r, e) {
+                    return t(n.a, o[r], e);
+                },
+                delegateYield: function delegateYield(r, o, a) {
+                    return e.resultName = o, t(n.d, regeneratorValues(r), a);
+                },
+                finish: function finish(r) {
+                    return t(n.f, r);
+                }
+            }, t = function t(r, _t, o) {
+                n.p = e.prev, n.n = e.next;
+                try {
+                    return r(_t, o);
+                } finally{
+                    e.next = n.n;
+                }
+            }), e.resultName && (e[e.resultName] = n.v, e.resultName = void 0), e.sent = n.v, e.next = n.n;
+            try {
+                return r.call(this, e);
+            } finally{
+                n.p = e.prev, n.n = e.next;
+            }
+        };
+    }
+    return (module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
+        return {
+            wrap: function wrap(e, t, n, o) {
+                return r.w(a(e), t, n, o && o.reverse());
+            },
+            isGeneratorFunction: n,
+            mark: r.m,
+            awrap: function awrap(r, e) {
+                return new OverloadYield(r, e);
+            },
+            AsyncIterator: regeneratorAsyncIterator,
+            async: function async(r, e, t, o, u) {
+                return (n(e) ? regeneratorAsyncGen : regeneratorAsync)(a(r), e, t, o, u);
+            },
+            keys: regeneratorKeys,
+            values: regeneratorValues
+        };
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports)();
+}
+module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/regenerator/index.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+// TODO(Babel 8): Remove this file.
+var runtime = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/regeneratorRuntime.js [app-client] (ecmascript)")();
+module.exports = runtime;
+// Copied from https://github.com/facebook/regenerator/blob/main/packages/runtime/runtime.js#L736=
+try {
+    regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+    if (typeof globalThis === "object") {
+        globalThis.regeneratorRuntime = runtime;
+    } else {
+        Function("r", "regeneratorRuntime = r")(runtime);
+    }
+}
+}),
+"[project]/node_modules/@babel/runtime/helpers/toPrimitive.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var _typeof = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/typeof.js [app-client] (ecmascript)")["default"];
+function toPrimitive(t, r) {
+    if ("object" != _typeof(t) || !t) return t;
+    var e = t[Symbol.toPrimitive];
+    if (void 0 !== e) {
+        var i = e.call(t, r || "default");
+        if ("object" != _typeof(i)) return i;
+        throw new TypeError("@@toPrimitive must return a primitive value.");
+    }
+    return ("string" === r ? String : Number)(t);
+}
+module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/toPropertyKey.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var _typeof = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/typeof.js [app-client] (ecmascript)")["default"];
+var toPrimitive = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/toPrimitive.js [app-client] (ecmascript)");
+function toPropertyKey(t) {
+    var i = toPrimitive(t, "string");
+    return "symbol" == _typeof(i) ? i : i + "";
+}
+module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/defineProperty.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var toPropertyKey = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/toPropertyKey.js [app-client] (ecmascript)");
+function _defineProperty(e, r, t) {
+    return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+        value: t,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[r] = t, e;
+}
+module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/asyncToGenerator.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function asyncGeneratorStep(n, t, e, r, o, a, c) {
+    try {
+        var i = n[a](c), u = i.value;
+    } catch (n) {
+        return void e(n);
+    }
+    i.done ? t(u) : Promise.resolve(u).then(r, o);
+}
+function _asyncToGenerator(n) {
+    return function() {
+        var t = this, e = arguments;
+        return new Promise(function(r, o) {
+            var a = n.apply(t, e);
+            function _next(n) {
+                asyncGeneratorStep(a, r, o, _next, _throw, "next", n);
+            }
+            function _throw(n) {
+                asyncGeneratorStep(a, r, o, _next, _throw, "throw", n);
+            }
+            _next(void 0);
+        });
+    };
+}
+module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/arrayWithHoles.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _arrayWithHoles(r) {
+    if (Array.isArray(r)) return r;
+}
+module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/iterableToArrayLimit.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _iterableToArrayLimit(r, l) {
+    var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+    if (null != t) {
+        var e, n, i, u, a = [], f = !0, o = !1;
+        try {
+            if (i = (t = t.call(r)).next, 0 === l) {
+                if (Object(t) !== t) return;
+                f = !1;
+            } else for(; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0);
+        } catch (r) {
+            o = !0, n = r;
+        } finally{
+            try {
+                if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
+            } finally{
+                if (o) throw n;
+            }
+        }
+        return a;
+    }
+}
+module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/arrayLikeToArray.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _arrayLikeToArray(r, a) {
+    (null == a || a > r.length) && (a = r.length);
+    for(var e = 0, n = Array(a); e < a; e++)n[e] = r[e];
+    return n;
+}
+module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var arrayLikeToArray = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/arrayLikeToArray.js [app-client] (ecmascript)");
+function _unsupportedIterableToArray(r, a) {
+    if (r) {
+        if ("string" == typeof r) return arrayLikeToArray(r, a);
+        var t = ({}).toString.call(r).slice(8, -1);
+        return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? arrayLikeToArray(r, a) : void 0;
+    }
+}
+module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/nonIterableRest.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _nonIterableRest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/slicedToArray.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var arrayWithHoles = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/arrayWithHoles.js [app-client] (ecmascript)");
+var iterableToArrayLimit = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/iterableToArrayLimit.js [app-client] (ecmascript)");
+var unsupportedIterableToArray = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js [app-client] (ecmascript)");
+var nonIterableRest = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/nonIterableRest.js [app-client] (ecmascript)");
+function _slicedToArray(r, e) {
+    return arrayWithHoles(r) || iterableToArrayLimit(r, e) || unsupportedIterableToArray(r, e) || nonIterableRest();
+}
+module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/classCallCheck.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _classCallCheck(a, n) {
+    if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function");
+}
+module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/createClass.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var toPropertyKey = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/toPropertyKey.js [app-client] (ecmascript)");
+function _defineProperties(e, r) {
+    for(var t = 0; t < r.length; t++){
+        var o = r[t];
+        o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, toPropertyKey(o.key), o);
+    }
+}
+function _createClass(e, r, t) {
+    return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", {
+        writable: !1
+    }), e;
+}
+module.exports = _createClass, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/assertThisInitialized.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _assertThisInitialized(e) {
+    if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return e;
+}
+module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var _typeof = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/typeof.js [app-client] (ecmascript)")["default"];
+var assertThisInitialized = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/assertThisInitialized.js [app-client] (ecmascript)");
+function _possibleConstructorReturn(t, e) {
+    if (e && ("object" == _typeof(e) || "function" == typeof e)) return e;
+    if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
+    return assertThisInitialized(t);
+}
+module.exports = _possibleConstructorReturn, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/getPrototypeOf.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _getPrototypeOf(t) {
+    return module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        return t.__proto__ || Object.getPrototypeOf(t);
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports, _getPrototypeOf(t);
+}
+module.exports = _getPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/setPrototypeOf.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _setPrototypeOf(t, e) {
+    return module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        return t.__proto__ = e, t;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports, _setPrototypeOf(t, e);
+}
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/inherits.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var setPrototypeOf = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/setPrototypeOf.js [app-client] (ecmascript)");
+function _inherits(t, e) {
+    if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
+    t.prototype = Object.create(e && e.prototype, {
+        constructor: {
+            value: t,
+            writable: !0,
+            configurable: !0
+        }
+    }), Object.defineProperty(t, "prototype", {
+        writable: !1
+    }), e && setPrototypeOf(t, e);
+}
+module.exports = _inherits, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/isNativeFunction.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _isNativeFunction(t) {
+    try {
+        return -1 !== Function.toString.call(t).indexOf("[native code]");
+    } catch (n) {
+        return "function" == typeof t;
+    }
+}
+module.exports = _isNativeFunction, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+function _isNativeReflectConstruct() {
+    try {
+        var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}));
+    } catch (t) {}
+    return (module.exports = _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+        return !!t;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports)();
+}
+module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/construct.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var isNativeReflectConstruct = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js [app-client] (ecmascript)");
+var setPrototypeOf = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/setPrototypeOf.js [app-client] (ecmascript)");
+function _construct(t, e, r) {
+    if (isNativeReflectConstruct()) return Reflect.construct.apply(null, arguments);
+    var o = [
+        null
+    ];
+    o.push.apply(o, e);
+    var p = new (t.bind.apply(t, o))();
+    return r && setPrototypeOf(p, r.prototype), p;
+}
+module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/@babel/runtime/helpers/wrapNativeSuper.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var getPrototypeOf = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/getPrototypeOf.js [app-client] (ecmascript)");
+var setPrototypeOf = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/setPrototypeOf.js [app-client] (ecmascript)");
+var isNativeFunction = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/isNativeFunction.js [app-client] (ecmascript)");
+var construct = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/construct.js [app-client] (ecmascript)");
+function _wrapNativeSuper(t) {
+    var r = "function" == typeof Map ? new Map() : void 0;
+    return module.exports = _wrapNativeSuper = function _wrapNativeSuper(t) {
+        if (null === t || !isNativeFunction(t)) return t;
+        if ("function" != typeof t) throw new TypeError("Super expression must either be null or a function");
+        if (void 0 !== r) {
+            if (r.has(t)) return r.get(t);
+            r.set(t, Wrapper);
+        }
+        function Wrapper() {
+            return construct(t, arguments, getPrototypeOf(this).constructor);
+        }
+        return Wrapper.prototype = Object.create(t.prototype, {
+            constructor: {
+                value: Wrapper,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }), setPrototypeOf(Wrapper, t);
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports, _wrapNativeSuper(t);
+}
+module.exports = _wrapNativeSuper, module.exports.__esModule = true, module.exports["default"] = module.exports;
+}),
+"[project]/node_modules/next-auth/core/errors.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var _interopRequireDefault = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/interopRequireDefault.js [app-client] (ecmascript)");
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.UnsupportedStrategy = exports.UnknownError = exports.OAuthCallbackError = exports.MissingSecret = exports.MissingAuthorize = exports.MissingAdapterMethods = exports.MissingAdapter = exports.MissingAPIRoute = exports.InvalidCallbackUrl = exports.AccountNotLinkedError = void 0;
+exports.adapterErrorHandler = adapterErrorHandler;
+exports.capitalize = capitalize;
+exports.eventsErrorHandler = eventsErrorHandler;
+exports.upperSnake = upperSnake;
+var _regenerator = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/regenerator/index.js [app-client] (ecmascript)"));
+var _asyncToGenerator2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/asyncToGenerator.js [app-client] (ecmascript)"));
+var _defineProperty2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/defineProperty.js [app-client] (ecmascript)"));
+var _classCallCheck2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/classCallCheck.js [app-client] (ecmascript)"));
+var _createClass2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/createClass.js [app-client] (ecmascript)"));
+var _possibleConstructorReturn2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js [app-client] (ecmascript)"));
+var _getPrototypeOf2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/getPrototypeOf.js [app-client] (ecmascript)"));
+var _inherits2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/inherits.js [app-client] (ecmascript)"));
+var _wrapNativeSuper2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/wrapNativeSuper.js [app-client] (ecmascript)"));
+function _callSuper(t, o, e) {
+    return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e));
+}
+function _isNativeReflectConstruct() {
+    try {
+        var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}));
+    } catch (t) {}
+    return (_isNativeReflectConstruct = function _isNativeReflectConstruct() {
+        return !!t;
+    })();
+}
+var UnknownError = exports.UnknownError = function(_Error) {
+    function UnknownError(error) {
+        var _message;
+        var _this;
+        (0, _classCallCheck2.default)(this, UnknownError);
+        _this = _callSuper(this, UnknownError, [
+            (_message = error === null || error === void 0 ? void 0 : error.message) !== null && _message !== void 0 ? _message : error
+        ]);
+        _this.name = "UnknownError";
+        _this.code = error.code;
+        if (error instanceof Error) {
+            _this.stack = error.stack;
+        }
+        return _this;
+    }
+    (0, _inherits2.default)(UnknownError, _Error);
+    return (0, _createClass2.default)(UnknownError, [
+        {
+            key: "toJSON",
+            value: function toJSON() {
+                return {
+                    name: this.name,
+                    message: this.message,
+                    stack: this.stack
+                };
+            }
+        }
+    ]);
+}((0, _wrapNativeSuper2.default)(Error));
+var OAuthCallbackError = exports.OAuthCallbackError = function(_UnknownError) {
+    function OAuthCallbackError() {
+        var _this2;
+        (0, _classCallCheck2.default)(this, OAuthCallbackError);
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++){
+            args[_key] = arguments[_key];
+        }
+        _this2 = _callSuper(this, OAuthCallbackError, [].concat(args));
+        (0, _defineProperty2.default)(_this2, "name", "OAuthCallbackError");
+        return _this2;
+    }
+    (0, _inherits2.default)(OAuthCallbackError, _UnknownError);
+    return (0, _createClass2.default)(OAuthCallbackError);
+}(UnknownError);
+var AccountNotLinkedError = exports.AccountNotLinkedError = function(_UnknownError2) {
+    function AccountNotLinkedError() {
+        var _this3;
+        (0, _classCallCheck2.default)(this, AccountNotLinkedError);
+        for(var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++){
+            args[_key2] = arguments[_key2];
+        }
+        _this3 = _callSuper(this, AccountNotLinkedError, [].concat(args));
+        (0, _defineProperty2.default)(_this3, "name", "AccountNotLinkedError");
+        return _this3;
+    }
+    (0, _inherits2.default)(AccountNotLinkedError, _UnknownError2);
+    return (0, _createClass2.default)(AccountNotLinkedError);
+}(UnknownError);
+var MissingAPIRoute = exports.MissingAPIRoute = function(_UnknownError3) {
+    function MissingAPIRoute() {
+        var _this4;
+        (0, _classCallCheck2.default)(this, MissingAPIRoute);
+        for(var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++){
+            args[_key3] = arguments[_key3];
+        }
+        _this4 = _callSuper(this, MissingAPIRoute, [].concat(args));
+        (0, _defineProperty2.default)(_this4, "name", "MissingAPIRouteError");
+        (0, _defineProperty2.default)(_this4, "code", "MISSING_NEXTAUTH_API_ROUTE_ERROR");
+        return _this4;
+    }
+    (0, _inherits2.default)(MissingAPIRoute, _UnknownError3);
+    return (0, _createClass2.default)(MissingAPIRoute);
+}(UnknownError);
+var MissingSecret = exports.MissingSecret = function(_UnknownError4) {
+    function MissingSecret() {
+        var _this5;
+        (0, _classCallCheck2.default)(this, MissingSecret);
+        for(var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++){
+            args[_key4] = arguments[_key4];
+        }
+        _this5 = _callSuper(this, MissingSecret, [].concat(args));
+        (0, _defineProperty2.default)(_this5, "name", "MissingSecretError");
+        (0, _defineProperty2.default)(_this5, "code", "NO_SECRET");
+        return _this5;
+    }
+    (0, _inherits2.default)(MissingSecret, _UnknownError4);
+    return (0, _createClass2.default)(MissingSecret);
+}(UnknownError);
+var MissingAuthorize = exports.MissingAuthorize = function(_UnknownError5) {
+    function MissingAuthorize() {
+        var _this6;
+        (0, _classCallCheck2.default)(this, MissingAuthorize);
+        for(var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++){
+            args[_key5] = arguments[_key5];
+        }
+        _this6 = _callSuper(this, MissingAuthorize, [].concat(args));
+        (0, _defineProperty2.default)(_this6, "name", "MissingAuthorizeError");
+        (0, _defineProperty2.default)(_this6, "code", "CALLBACK_CREDENTIALS_HANDLER_ERROR");
+        return _this6;
+    }
+    (0, _inherits2.default)(MissingAuthorize, _UnknownError5);
+    return (0, _createClass2.default)(MissingAuthorize);
+}(UnknownError);
+var MissingAdapter = exports.MissingAdapter = function(_UnknownError6) {
+    function MissingAdapter() {
+        var _this7;
+        (0, _classCallCheck2.default)(this, MissingAdapter);
+        for(var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++){
+            args[_key6] = arguments[_key6];
+        }
+        _this7 = _callSuper(this, MissingAdapter, [].concat(args));
+        (0, _defineProperty2.default)(_this7, "name", "MissingAdapterError");
+        (0, _defineProperty2.default)(_this7, "code", "EMAIL_REQUIRES_ADAPTER_ERROR");
+        return _this7;
+    }
+    (0, _inherits2.default)(MissingAdapter, _UnknownError6);
+    return (0, _createClass2.default)(MissingAdapter);
+}(UnknownError);
+var MissingAdapterMethods = exports.MissingAdapterMethods = function(_UnknownError7) {
+    function MissingAdapterMethods() {
+        var _this8;
+        (0, _classCallCheck2.default)(this, MissingAdapterMethods);
+        for(var _len7 = arguments.length, args = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++){
+            args[_key7] = arguments[_key7];
+        }
+        _this8 = _callSuper(this, MissingAdapterMethods, [].concat(args));
+        (0, _defineProperty2.default)(_this8, "name", "MissingAdapterMethodsError");
+        (0, _defineProperty2.default)(_this8, "code", "MISSING_ADAPTER_METHODS_ERROR");
+        return _this8;
+    }
+    (0, _inherits2.default)(MissingAdapterMethods, _UnknownError7);
+    return (0, _createClass2.default)(MissingAdapterMethods);
+}(UnknownError);
+var UnsupportedStrategy = exports.UnsupportedStrategy = function(_UnknownError8) {
+    function UnsupportedStrategy() {
+        var _this9;
+        (0, _classCallCheck2.default)(this, UnsupportedStrategy);
+        for(var _len8 = arguments.length, args = new Array(_len8), _key8 = 0; _key8 < _len8; _key8++){
+            args[_key8] = arguments[_key8];
+        }
+        _this9 = _callSuper(this, UnsupportedStrategy, [].concat(args));
+        (0, _defineProperty2.default)(_this9, "name", "UnsupportedStrategyError");
+        (0, _defineProperty2.default)(_this9, "code", "CALLBACK_CREDENTIALS_JWT_ERROR");
+        return _this9;
+    }
+    (0, _inherits2.default)(UnsupportedStrategy, _UnknownError8);
+    return (0, _createClass2.default)(UnsupportedStrategy);
+}(UnknownError);
+var InvalidCallbackUrl = exports.InvalidCallbackUrl = function(_UnknownError9) {
+    function InvalidCallbackUrl() {
+        var _this10;
+        (0, _classCallCheck2.default)(this, InvalidCallbackUrl);
+        for(var _len9 = arguments.length, args = new Array(_len9), _key9 = 0; _key9 < _len9; _key9++){
+            args[_key9] = arguments[_key9];
+        }
+        _this10 = _callSuper(this, InvalidCallbackUrl, [].concat(args));
+        (0, _defineProperty2.default)(_this10, "name", "InvalidCallbackUrl");
+        (0, _defineProperty2.default)(_this10, "code", "INVALID_CALLBACK_URL_ERROR");
+        return _this10;
+    }
+    (0, _inherits2.default)(InvalidCallbackUrl, _UnknownError9);
+    return (0, _createClass2.default)(InvalidCallbackUrl);
+}(UnknownError);
+function upperSnake(s) {
+    return s.replace(/([A-Z])/g, "_$1").toUpperCase();
+}
+function capitalize(s) {
+    return "".concat(s[0].toUpperCase()).concat(s.slice(1));
+}
+function eventsErrorHandler(methods, logger) {
+    return Object.keys(methods).reduce(function(acc, name) {
+        acc[name] = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee() {
+            var method, _args = arguments;
+            return _regenerator.default.wrap(function _callee$(_context) {
+                while(1)switch(_context.prev = _context.next){
+                    case 0:
+                        _context.prev = 0;
+                        method = methods[name];
+                        _context.next = 4;
+                        return method.apply(void 0, _args);
+                    case 4:
+                        return _context.abrupt("return", _context.sent);
+                    case 7:
+                        _context.prev = 7;
+                        _context.t0 = _context["catch"](0);
+                        logger.error("".concat(upperSnake(name), "_EVENT_ERROR"), _context.t0);
+                    case 10:
+                    case "end":
+                        return _context.stop();
+                }
+            }, _callee, null, [
+                [
+                    0,
+                    7
+                ]
+            ]);
+        }));
+        return acc;
+    }, {});
+}
+function adapterErrorHandler(adapter, logger) {
+    if (!adapter) return;
+    return Object.keys(adapter).reduce(function(acc, name) {
+        acc[name] = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee2() {
+            var _len10, args, _key10, method, e, _args2 = arguments;
+            return _regenerator.default.wrap(function _callee2$(_context2) {
+                while(1)switch(_context2.prev = _context2.next){
+                    case 0:
+                        _context2.prev = 0;
+                        for(_len10 = _args2.length, args = new Array(_len10), _key10 = 0; _key10 < _len10; _key10++){
+                            args[_key10] = _args2[_key10];
+                        }
+                        logger.debug("adapter_".concat(name), {
+                            args: args
+                        });
+                        method = adapter[name];
+                        _context2.next = 6;
+                        return method.apply(void 0, args);
+                    case 6:
+                        return _context2.abrupt("return", _context2.sent);
+                    case 9:
+                        _context2.prev = 9;
+                        _context2.t0 = _context2["catch"](0);
+                        logger.error("adapter_error_".concat(name), _context2.t0);
+                        e = new UnknownError(_context2.t0);
+                        e.name = "".concat(capitalize(name), "Error");
+                        throw e;
+                    case 15:
+                    case "end":
+                        return _context2.stop();
+                }
+            }, _callee2, null, [
+                [
+                    0,
+                    9
+                ]
+            ]);
+        }));
+        return acc;
+    }, {});
+}
+}),
+"[project]/node_modules/next-auth/utils/logger.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var _interopRequireDefault = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/interopRequireDefault.js [app-client] (ecmascript)");
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+exports.proxyLogger = proxyLogger;
+exports.setLogger = setLogger;
+var _regenerator = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/regenerator/index.js [app-client] (ecmascript)"));
+var _defineProperty2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/defineProperty.js [app-client] (ecmascript)"));
+var _asyncToGenerator2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/asyncToGenerator.js [app-client] (ecmascript)"));
+var _errors = __turbopack_context__.r("[project]/node_modules/next-auth/core/errors.js [app-client] (ecmascript)");
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _defineProperty2.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+function formatError(o) {
+    if (o instanceof Error && !(o instanceof _errors.UnknownError)) {
+        return {
+            message: o.message,
+            stack: o.stack,
+            name: o.name
+        };
+    }
+    if (hasErrorProperty(o)) {
+        var _o$message;
+        o.error = formatError(o.error);
+        o.message = (_o$message = o.message) !== null && _o$message !== void 0 ? _o$message : o.error.message;
+    }
+    return o;
+}
+function hasErrorProperty(x) {
+    return !!(x !== null && x !== void 0 && x.error);
+}
+var _logger = {
+    error: function error(code, metadata) {
+        metadata = formatError(metadata);
+        console.error("[next-auth][error][".concat(code, "]"), "\nhttps://next-auth.js.org/errors#".concat(code.toLowerCase()), metadata.message, metadata);
+    },
+    warn: function warn(code) {
+        console.warn("[next-auth][warn][".concat(code, "]"), "\nhttps://next-auth.js.org/warnings#".concat(code.toLowerCase()));
+    },
+    debug: function debug(code, metadata) {
+        console.log("[next-auth][debug][".concat(code, "]"), metadata);
+    }
+};
+function setLogger() {
+    var newLogger = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var debug = arguments.length > 1 ? arguments[1] : undefined;
+    if (!debug) _logger.debug = function() {};
+    if (newLogger.error) _logger.error = newLogger.error;
+    if (newLogger.warn) _logger.warn = newLogger.warn;
+    if (newLogger.debug) _logger.debug = newLogger.debug;
+}
+var _default = exports.default = _logger;
+function proxyLogger() {
+    var logger = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _logger;
+    var basePath = arguments.length > 1 ? arguments[1] : undefined;
+    try {
+        if (typeof window === "undefined") {
+            return logger;
+        }
+        var clientLogger = {};
+        var _loop = function _loop(level) {
+            clientLogger[level] = function() {
+                var _ref = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee(code, metadata) {
+                    var url, body;
+                    return _regenerator.default.wrap(function _callee$(_context) {
+                        while(1)switch(_context.prev = _context.next){
+                            case 0:
+                                _logger[level](code, metadata);
+                                if (level === "error") {
+                                    metadata = formatError(metadata);
+                                }
+                                ;
+                                metadata.client = true;
+                                url = "".concat(basePath, "/_log");
+                                body = new URLSearchParams(_objectSpread({
+                                    level: level,
+                                    code: code
+                                }, metadata));
+                                if (!navigator.sendBeacon) {
+                                    _context.next = 8;
+                                    break;
+                                }
+                                return _context.abrupt("return", navigator.sendBeacon(url, body));
+                            case 8:
+                                _context.next = 10;
+                                return fetch(url, {
+                                    method: "POST",
+                                    body: body,
+                                    keepalive: true
+                                });
+                            case 10:
+                                return _context.abrupt("return", _context.sent);
+                            case 11:
+                            case "end":
+                                return _context.stop();
+                        }
+                    }, _callee);
+                }));
+                return function(_x, _x2) {
+                    return _ref.apply(this, arguments);
+                };
+            }();
+        };
+        for(var level in logger){
+            _loop(level);
+        }
+        return clientLogger;
+    } catch (_unused) {
+        return _logger;
+    }
+}
+}),
+"[project]/node_modules/next-auth/utils/parse-url.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = parseUrl;
+function parseUrl(url) {
+    var _url2;
+    const defaultUrl = new URL("http://localhost:3000/api/auth");
+    if (url && !url.startsWith("http")) {
+        url = `https://${url}`;
+    }
+    const _url = new URL((_url2 = url) !== null && _url2 !== void 0 ? _url2 : defaultUrl);
+    const path = (_url.pathname === "/" ? defaultUrl.pathname : _url.pathname).replace(/\/$/, "");
+    const base = `${_url.origin}${path}`;
+    return {
+        origin: _url.origin,
+        host: _url.host,
+        path,
+        base,
+        toString: ()=>base
+    };
+}
+}),
+"[project]/node_modules/next-auth/client/_utils.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var _interopRequireDefault = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/interopRequireDefault.js [app-client] (ecmascript)");
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.BroadcastChannel = BroadcastChannel;
+exports.apiBaseUrl = apiBaseUrl;
+exports.fetchData = fetchData;
+exports.now = now;
+var _regenerator = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/regenerator/index.js [app-client] (ecmascript)"));
+var _defineProperty2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/defineProperty.js [app-client] (ecmascript)"));
+var _asyncToGenerator2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/asyncToGenerator.js [app-client] (ecmascript)"));
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _defineProperty2.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+function fetchData(_x, _x2, _x3) {
+    return _fetchData.apply(this, arguments);
+}
+function _fetchData() {
+    _fetchData = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee(path, __NEXTAUTH, logger) {
+        var _ref, ctx, _ref$req, req, url, _req$headers, options, res, data, _args = arguments;
+        return _regenerator.default.wrap(function _callee$(_context) {
+            while(1)switch(_context.prev = _context.next){
+                case 0:
+                    _ref = _args.length > 3 && _args[3] !== undefined ? _args[3] : {}, ctx = _ref.ctx, _ref$req = _ref.req, req = _ref$req === void 0 ? ctx === null || ctx === void 0 ? void 0 : ctx.req : _ref$req;
+                    url = "".concat(apiBaseUrl(__NEXTAUTH), "/").concat(path);
+                    _context.prev = 2;
+                    options = {
+                        headers: _objectSpread({
+                            "Content-Type": "application/json"
+                        }, req !== null && req !== void 0 && (_req$headers = req.headers) !== null && _req$headers !== void 0 && _req$headers.cookie ? {
+                            cookie: req.headers.cookie
+                        } : {})
+                    };
+                    if (req !== null && req !== void 0 && req.body) {
+                        options.body = JSON.stringify(req.body);
+                        options.method = "POST";
+                    }
+                    _context.next = 7;
+                    return fetch(url, options);
+                case 7:
+                    res = _context.sent;
+                    _context.next = 10;
+                    return res.json();
+                case 10:
+                    data = _context.sent;
+                    if (res.ok) {
+                        _context.next = 13;
+                        break;
+                    }
+                    throw data;
+                case 13:
+                    return _context.abrupt("return", Object.keys(data).length > 0 ? data : null);
+                case 16:
+                    _context.prev = 16;
+                    _context.t0 = _context["catch"](2);
+                    logger.error("CLIENT_FETCH_ERROR", {
+                        error: _context.t0,
+                        url: url
+                    });
+                    return _context.abrupt("return", null);
+                case 20:
+                case "end":
+                    return _context.stop();
+            }
+        }, _callee, null, [
+            [
+                2,
+                16
+            ]
+        ]);
+    }));
+    return _fetchData.apply(this, arguments);
+}
+function apiBaseUrl(__NEXTAUTH) {
+    if (typeof window === "undefined") {
+        return "".concat(__NEXTAUTH.baseUrlServer).concat(__NEXTAUTH.basePathServer);
+    }
+    return __NEXTAUTH.basePath;
+}
+function now() {
+    return Math.floor(Date.now() / 1000);
+}
+function BroadcastChannel() {
+    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "nextauth.message";
+    return {
+        receive: function receive(onReceive) {
+            var handler = function handler(event) {
+                var _event$newValue;
+                if (event.key !== name) return;
+                var message = JSON.parse((_event$newValue = event.newValue) !== null && _event$newValue !== void 0 ? _event$newValue : "{}");
+                if ((message === null || message === void 0 ? void 0 : message.event) !== "session" || !(message !== null && message !== void 0 && message.data)) return;
+                onReceive(message);
+            };
+            window.addEventListener("storage", handler);
+            return function() {
+                return window.removeEventListener("storage", handler);
+            };
+        },
+        post: function post(message) {
+            if (typeof window === "undefined") return;
+            try {
+                localStorage.setItem(name, JSON.stringify(_objectSpread(_objectSpread({}, message), {}, {
+                    timestamp: now()
+                })));
+            } catch (_unused) {}
+        }
+    };
+}
+}),
+"[project]/node_modules/next-auth/react/types.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+}),
+"[project]/node_modules/next-auth/react/index.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+"use strict";
+var _interopRequireDefault = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/interopRequireDefault.js [app-client] (ecmascript)");
+var _typeof = __turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/typeof.js [app-client] (ecmascript)");
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var _exportNames = {
+    SessionContext: true,
+    useSession: true,
+    getSession: true,
+    getCsrfToken: true,
+    getProviders: true,
+    signIn: true,
+    signOut: true,
+    SessionProvider: true
+};
+exports.SessionContext = void 0;
+exports.SessionProvider = SessionProvider;
+exports.getCsrfToken = getCsrfToken;
+exports.getProviders = getProviders;
+exports.getSession = getSession;
+exports.signIn = signIn;
+exports.signOut = signOut;
+exports.useSession = useSession;
+var _regenerator = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/regenerator/index.js [app-client] (ecmascript)"));
+var _defineProperty2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/defineProperty.js [app-client] (ecmascript)"));
+var _asyncToGenerator2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/asyncToGenerator.js [app-client] (ecmascript)"));
+var _slicedToArray2 = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/@babel/runtime/helpers/slicedToArray.js [app-client] (ecmascript)"));
+var React = _interopRequireWildcard(__turbopack_context__.r("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+var _logger2 = _interopRequireWildcard(__turbopack_context__.r("[project]/node_modules/next-auth/utils/logger.js [app-client] (ecmascript)"));
+var _parseUrl = _interopRequireDefault(__turbopack_context__.r("[project]/node_modules/next-auth/utils/parse-url.js [app-client] (ecmascript)"));
+var _utils = __turbopack_context__.r("[project]/node_modules/next-auth/client/_utils.js [app-client] (ecmascript)");
+var _jsxRuntime = __turbopack_context__.r("[project]/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
+var _types = __turbopack_context__.r("[project]/node_modules/next-auth/react/types.js [app-client] (ecmascript)");
+Object.keys(_types).forEach(function(key) {
+    if (key === "default" || key === "__esModule") return;
+    if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+    if (key in exports && exports[key] === _types[key]) return;
+    Object.defineProperty(exports, key, {
+        enumerable: true,
+        get: function get() {
+            return _types[key];
+        }
+    });
+});
+var _process$env$NEXTAUTH, _ref, _process$env$NEXTAUTH2, _process$env$NEXTAUTH3, _React$createContext;
+function _getRequireWildcardCache(e) {
+    if ("function" != typeof WeakMap) return null;
+    var r = new WeakMap(), t = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache(e) {
+        return e ? t : r;
+    })(e);
+}
+function _interopRequireWildcard(e, r) {
+    if (!r && e && e.__esModule) return e;
+    if (null === e || "object" != _typeof(e) && "function" != typeof e) return {
+        default: e
+    };
+    var t = _getRequireWildcardCache(r);
+    if (t && t.has(e)) return t.get(e);
+    var n = {
+        __proto__: null
+    }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var u in e)if ("default" !== u && ({}).hasOwnProperty.call(e, u)) {
+        var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
+        i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
+    }
+    return n.default = e, t && t.set(e, n), n;
+}
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _defineProperty2.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+var __NEXTAUTH = {
+    baseUrl: (0, _parseUrl.default)((_process$env$NEXTAUTH = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXTAUTH_URL) !== null && _process$env$NEXTAUTH !== void 0 ? _process$env$NEXTAUTH : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.VERCEL_URL).origin,
+    basePath: (0, _parseUrl.default)(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXTAUTH_URL).path,
+    baseUrlServer: (0, _parseUrl.default)((_ref = (_process$env$NEXTAUTH2 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXTAUTH_URL_INTERNAL) !== null && _process$env$NEXTAUTH2 !== void 0 ? _process$env$NEXTAUTH2 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXTAUTH_URL) !== null && _ref !== void 0 ? _ref : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.VERCEL_URL).origin,
+    basePathServer: (0, _parseUrl.default)((_process$env$NEXTAUTH3 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXTAUTH_URL_INTERNAL) !== null && _process$env$NEXTAUTH3 !== void 0 ? _process$env$NEXTAUTH3 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXTAUTH_URL).path,
+    _lastSync: 0,
+    _session: undefined,
+    _getSession: function _getSession() {}
+};
+var broadcast = (0, _utils.BroadcastChannel)();
+var logger = (0, _logger2.proxyLogger)(_logger2.default, __NEXTAUTH.basePath);
+function useOnline() {
+    var _React$useState = React.useState(typeof navigator !== "undefined" ? navigator.onLine : false), _React$useState2 = (0, _slicedToArray2.default)(_React$useState, 2), isOnline = _React$useState2[0], setIsOnline = _React$useState2[1];
+    var setOnline = function setOnline() {
+        return setIsOnline(true);
+    };
+    var setOffline = function setOffline() {
+        return setIsOnline(false);
+    };
+    React.useEffect({
+        "useOnline.useEffect": function() {
+            window.addEventListener("online", setOnline);
+            window.addEventListener("offline", setOffline);
+            return ({
+                "useOnline.useEffect": function() {
+                    window.removeEventListener("online", setOnline);
+                    window.removeEventListener("offline", setOffline);
+                }
+            })["useOnline.useEffect"];
+        }
+    }["useOnline.useEffect"], []);
+    return isOnline;
+}
+var SessionContext = exports.SessionContext = (_React$createContext = React.createContext) === null || _React$createContext === void 0 ? void 0 : _React$createContext.call(React, undefined);
+function useSession(options) {
+    if (!SessionContext) {
+        throw new Error("React Context is unavailable in Server Components");
+    }
+    var value = React.useContext(SessionContext);
+    if (!value && ("TURBOPACK compile-time value", "development") !== "production") {
+        throw new Error("[next-auth]: `useSession` must be wrapped in a <SessionProvider />");
+    }
+    var _ref2 = options !== null && options !== void 0 ? options : {}, required = _ref2.required, onUnauthenticated = _ref2.onUnauthenticated;
+    var requiredAndNotLoading = required && value.status === "unauthenticated";
+    React.useEffect({
+        "useSession.useEffect": function() {
+            if (requiredAndNotLoading) {
+                var url = "/api/auth/signin?".concat(new URLSearchParams({
+                    error: "SessionRequired",
+                    callbackUrl: window.location.href
+                }));
+                if (onUnauthenticated) onUnauthenticated();
+                else window.location.href = url;
+            }
+        }
+    }["useSession.useEffect"], [
+        requiredAndNotLoading,
+        onUnauthenticated
+    ]);
+    if (requiredAndNotLoading) {
+        return {
+            data: value.data,
+            update: value.update,
+            status: "loading"
+        };
+    }
+    return value;
+}
+function getSession(_x) {
+    return _getSession2.apply(this, arguments);
+}
+function _getSession2() {
+    _getSession2 = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee3(params) {
+        var _params$broadcast;
+        var session;
+        return _regenerator.default.wrap(function _callee3$(_context3) {
+            while(1)switch(_context3.prev = _context3.next){
+                case 0:
+                    _context3.next = 2;
+                    return (0, _utils.fetchData)("session", __NEXTAUTH, logger, params);
+                case 2:
+                    session = _context3.sent;
+                    if ((_params$broadcast = params === null || params === void 0 ? void 0 : params.broadcast) !== null && _params$broadcast !== void 0 ? _params$broadcast : true) {
+                        broadcast.post({
+                            event: "session",
+                            data: {
+                                trigger: "getSession"
+                            }
+                        });
+                    }
+                    return _context3.abrupt("return", session);
+                case 5:
+                case "end":
+                    return _context3.stop();
+            }
+        }, _callee3);
+    }));
+    return _getSession2.apply(this, arguments);
+}
+function getCsrfToken(_x2) {
+    return _getCsrfToken.apply(this, arguments);
+}
+function _getCsrfToken() {
+    _getCsrfToken = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee4(params) {
+        var response;
+        return _regenerator.default.wrap(function _callee4$(_context4) {
+            while(1)switch(_context4.prev = _context4.next){
+                case 0:
+                    _context4.next = 2;
+                    return (0, _utils.fetchData)("csrf", __NEXTAUTH, logger, params);
+                case 2:
+                    response = _context4.sent;
+                    return _context4.abrupt("return", response === null || response === void 0 ? void 0 : response.csrfToken);
+                case 4:
+                case "end":
+                    return _context4.stop();
+            }
+        }, _callee4);
+    }));
+    return _getCsrfToken.apply(this, arguments);
+}
+function getProviders() {
+    return _getProviders.apply(this, arguments);
+}
+function _getProviders() {
+    _getProviders = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee5() {
+        return _regenerator.default.wrap(function _callee5$(_context5) {
+            while(1)switch(_context5.prev = _context5.next){
+                case 0:
+                    _context5.next = 2;
+                    return (0, _utils.fetchData)("providers", __NEXTAUTH, logger);
+                case 2:
+                    return _context5.abrupt("return", _context5.sent);
+                case 3:
+                case "end":
+                    return _context5.stop();
+            }
+        }, _callee5);
+    }));
+    return _getProviders.apply(this, arguments);
+}
+function signIn(_x3, _x4, _x5) {
+    return _signIn.apply(this, arguments);
+}
+function _signIn() {
+    _signIn = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee6(provider, options, authorizationParams) {
+        var _ref5, _ref5$callbackUrl, callbackUrl, _ref5$redirect, redirect, baseUrl, providers, isCredentials, isEmail, isSupportingReturn, signInUrl, _signInUrl, res, data, _data$url, url, error;
+        return _regenerator.default.wrap(function _callee6$(_context6) {
+            while(1)switch(_context6.prev = _context6.next){
+                case 0:
+                    _ref5 = options !== null && options !== void 0 ? options : {}, _ref5$callbackUrl = _ref5.callbackUrl, callbackUrl = _ref5$callbackUrl === void 0 ? window.location.href : _ref5$callbackUrl, _ref5$redirect = _ref5.redirect, redirect = _ref5$redirect === void 0 ? true : _ref5$redirect;
+                    baseUrl = (0, _utils.apiBaseUrl)(__NEXTAUTH);
+                    _context6.next = 4;
+                    return getProviders();
+                case 4:
+                    providers = _context6.sent;
+                    if (providers) {
+                        _context6.next = 8;
+                        break;
+                    }
+                    window.location.href = "".concat(baseUrl, "/error");
+                    return _context6.abrupt("return");
+                case 8:
+                    if (!(!provider || !(provider in providers))) {
+                        _context6.next = 11;
+                        break;
+                    }
+                    window.location.href = "".concat(baseUrl, "/signin?").concat(new URLSearchParams({
+                        callbackUrl: callbackUrl
+                    }));
+                    return _context6.abrupt("return");
+                case 11:
+                    isCredentials = providers[provider].type === "credentials";
+                    isEmail = providers[provider].type === "email";
+                    isSupportingReturn = isCredentials || isEmail;
+                    signInUrl = "".concat(baseUrl, "/").concat(isCredentials ? "callback" : "signin", "/").concat(provider);
+                    _signInUrl = "".concat(signInUrl).concat(authorizationParams ? "?".concat(new URLSearchParams(authorizationParams)) : "");
+                    _context6.t0 = fetch;
+                    _context6.t1 = _signInUrl;
+                    _context6.t2 = {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    };
+                    _context6.t3 = URLSearchParams;
+                    _context6.t4 = _objectSpread;
+                    _context6.t5 = _objectSpread({}, options);
+                    _context6.t6 = {};
+                    _context6.next = 25;
+                    return getCsrfToken();
+                case 25:
+                    _context6.t7 = _context6.sent;
+                    _context6.t8 = callbackUrl;
+                    _context6.t9 = {
+                        csrfToken: _context6.t7,
+                        callbackUrl: _context6.t8,
+                        json: true
+                    };
+                    _context6.t10 = (0, _context6.t4)(_context6.t5, _context6.t6, _context6.t9);
+                    _context6.t11 = new _context6.t3(_context6.t10);
+                    _context6.t12 = {
+                        method: "post",
+                        headers: _context6.t2,
+                        body: _context6.t11
+                    };
+                    _context6.next = 33;
+                    return (0, _context6.t0)(_context6.t1, _context6.t12);
+                case 33:
+                    res = _context6.sent;
+                    _context6.next = 36;
+                    return res.json();
+                case 36:
+                    data = _context6.sent;
+                    if (!(redirect || !isSupportingReturn)) {
+                        _context6.next = 42;
+                        break;
+                    }
+                    url = (_data$url = data.url) !== null && _data$url !== void 0 ? _data$url : callbackUrl;
+                    window.location.href = url;
+                    if (url.includes("#")) window.location.reload();
+                    return _context6.abrupt("return");
+                case 42:
+                    error = new URL(data.url).searchParams.get("error");
+                    if (!res.ok) {
+                        _context6.next = 46;
+                        break;
+                    }
+                    _context6.next = 46;
+                    return __NEXTAUTH._getSession({
+                        event: "storage"
+                    });
+                case 46:
+                    return _context6.abrupt("return", {
+                        error: error,
+                        status: res.status,
+                        ok: res.ok,
+                        url: error ? null : data.url
+                    });
+                case 47:
+                case "end":
+                    return _context6.stop();
+            }
+        }, _callee6);
+    }));
+    return _signIn.apply(this, arguments);
+}
+function signOut(_x6) {
+    return _signOut.apply(this, arguments);
+}
+function _signOut() {
+    _signOut = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee7(options) {
+        var _options$redirect;
+        var _ref6, _ref6$callbackUrl, callbackUrl, baseUrl, fetchOptions, res, data, _data$url2, url;
+        return _regenerator.default.wrap(function _callee7$(_context7) {
+            while(1)switch(_context7.prev = _context7.next){
+                case 0:
+                    _ref6 = options !== null && options !== void 0 ? options : {}, _ref6$callbackUrl = _ref6.callbackUrl, callbackUrl = _ref6$callbackUrl === void 0 ? window.location.href : _ref6$callbackUrl;
+                    baseUrl = (0, _utils.apiBaseUrl)(__NEXTAUTH);
+                    _context7.t0 = {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    };
+                    _context7.t1 = URLSearchParams;
+                    _context7.next = 6;
+                    return getCsrfToken();
+                case 6:
+                    _context7.t2 = _context7.sent;
+                    _context7.t3 = callbackUrl;
+                    _context7.t4 = {
+                        csrfToken: _context7.t2,
+                        callbackUrl: _context7.t3,
+                        json: true
+                    };
+                    _context7.t5 = new _context7.t1(_context7.t4);
+                    fetchOptions = {
+                        method: "post",
+                        headers: _context7.t0,
+                        body: _context7.t5
+                    };
+                    _context7.next = 13;
+                    return fetch("".concat(baseUrl, "/signout"), fetchOptions);
+                case 13:
+                    res = _context7.sent;
+                    _context7.next = 16;
+                    return res.json();
+                case 16:
+                    data = _context7.sent;
+                    broadcast.post({
+                        event: "session",
+                        data: {
+                            trigger: "signout"
+                        }
+                    });
+                    if (!((_options$redirect = options === null || options === void 0 ? void 0 : options.redirect) !== null && _options$redirect !== void 0 ? _options$redirect : true)) {
+                        _context7.next = 23;
+                        break;
+                    }
+                    url = (_data$url2 = data.url) !== null && _data$url2 !== void 0 ? _data$url2 : callbackUrl;
+                    window.location.href = url;
+                    if (url.includes("#")) window.location.reload();
+                    return _context7.abrupt("return");
+                case 23:
+                    _context7.next = 25;
+                    return __NEXTAUTH._getSession({
+                        event: "storage"
+                    });
+                case 25:
+                    return _context7.abrupt("return", data);
+                case 26:
+                case "end":
+                    return _context7.stop();
+            }
+        }, _callee7);
+    }));
+    return _signOut.apply(this, arguments);
+}
+function SessionProvider(props) {
+    if (!SessionContext) {
+        throw new Error("React Context is unavailable in Server Components");
+    }
+    var children = props.children, basePath = props.basePath, refetchInterval = props.refetchInterval, refetchWhenOffline = props.refetchWhenOffline;
+    if (basePath) __NEXTAUTH.basePath = basePath;
+    var hasInitialSession = props.session !== undefined;
+    __NEXTAUTH._lastSync = hasInitialSession ? (0, _utils.now)() : 0;
+    var _React$useState3 = React.useState({
+        "SessionProvider.useState[_React$useState3]": function() {
+            if (hasInitialSession) __NEXTAUTH._session = props.session;
+            return props.session;
+        }
+    }["SessionProvider.useState[_React$useState3]"]), _React$useState4 = (0, _slicedToArray2.default)(_React$useState3, 2), session = _React$useState4[0], setSession = _React$useState4[1];
+    var _React$useState5 = React.useState(!hasInitialSession), _React$useState6 = (0, _slicedToArray2.default)(_React$useState5, 2), loading = _React$useState6[0], setLoading = _React$useState6[1];
+    React.useEffect({
+        "SessionProvider.useEffect": function() {
+            __NEXTAUTH._getSession = (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee() {
+                var _ref4, event, storageEvent, _args = arguments;
+                return _regenerator.default.wrap(function _callee$(_context) {
+                    while(1)switch(_context.prev = _context.next){
+                        case 0:
+                            _ref4 = _args.length > 0 && _args[0] !== undefined ? _args[0] : {}, event = _ref4.event;
+                            _context.prev = 1;
+                            storageEvent = event === "storage";
+                            if (!(storageEvent || __NEXTAUTH._session === undefined)) {
+                                _context.next = 10;
+                                break;
+                            }
+                            __NEXTAUTH._lastSync = (0, _utils.now)();
+                            _context.next = 7;
+                            return getSession({
+                                broadcast: !storageEvent
+                            });
+                        case 7:
+                            __NEXTAUTH._session = _context.sent;
+                            setSession(__NEXTAUTH._session);
+                            return _context.abrupt("return");
+                        case 10:
+                            if (!(!event || __NEXTAUTH._session === null || (0, _utils.now)() < __NEXTAUTH._lastSync)) {
+                                _context.next = 12;
+                                break;
+                            }
+                            return _context.abrupt("return");
+                        case 12:
+                            __NEXTAUTH._lastSync = (0, _utils.now)();
+                            _context.next = 15;
+                            return getSession();
+                        case 15:
+                            __NEXTAUTH._session = _context.sent;
+                            setSession(__NEXTAUTH._session);
+                            _context.next = 22;
+                            break;
+                        case 19:
+                            _context.prev = 19;
+                            _context.t0 = _context["catch"](1);
+                            logger.error("CLIENT_SESSION_ERROR", _context.t0);
+                        case 22:
+                            _context.prev = 22;
+                            setLoading(false);
+                            return _context.finish(22);
+                        case 25:
+                        case "end":
+                            return _context.stop();
+                    }
+                }, _callee, null, [
+                    [
+                        1,
+                        19,
+                        22,
+                        25
+                    ]
+                ]);
+            }));
+            __NEXTAUTH._getSession();
+            return ({
+                "SessionProvider.useEffect": function() {
+                    __NEXTAUTH._lastSync = 0;
+                    __NEXTAUTH._session = undefined;
+                    __NEXTAUTH._getSession = ({
+                        "SessionProvider.useEffect": function() {}
+                    })["SessionProvider.useEffect"];
+                }
+            })["SessionProvider.useEffect"];
+        }
+    }["SessionProvider.useEffect"], []);
+    React.useEffect({
+        "SessionProvider.useEffect": function() {
+            var unsubscribe = broadcast.receive({
+                "SessionProvider.useEffect.unsubscribe": function() {
+                    return __NEXTAUTH._getSession({
+                        event: "storage"
+                    });
+                }
+            }["SessionProvider.useEffect.unsubscribe"]);
+            return ({
+                "SessionProvider.useEffect": function() {
+                    return unsubscribe();
+                }
+            })["SessionProvider.useEffect"];
+        }
+    }["SessionProvider.useEffect"], []);
+    React.useEffect({
+        "SessionProvider.useEffect": function() {
+            var _props$refetchOnWindo = props.refetchOnWindowFocus, refetchOnWindowFocus = _props$refetchOnWindo === void 0 ? true : _props$refetchOnWindo;
+            var visibilityHandler = function visibilityHandler() {
+                if (refetchOnWindowFocus && document.visibilityState === "visible") __NEXTAUTH._getSession({
+                    event: "visibilitychange"
+                });
+            };
+            document.addEventListener("visibilitychange", visibilityHandler, false);
+            return ({
+                "SessionProvider.useEffect": function() {
+                    return document.removeEventListener("visibilitychange", visibilityHandler, false);
+                }
+            })["SessionProvider.useEffect"];
+        }
+    }["SessionProvider.useEffect"], [
+        props.refetchOnWindowFocus
+    ]);
+    var isOnline = useOnline();
+    var shouldRefetch = refetchWhenOffline !== false || isOnline;
+    React.useEffect({
+        "SessionProvider.useEffect": function() {
+            if (refetchInterval && shouldRefetch) {
+                var refetchIntervalTimer = setInterval({
+                    "SessionProvider.useEffect.refetchIntervalTimer": function() {
+                        if (__NEXTAUTH._session) {
+                            __NEXTAUTH._getSession({
+                                event: "poll"
+                            });
+                        }
+                    }
+                }["SessionProvider.useEffect.refetchIntervalTimer"], refetchInterval * 1000);
+                return ({
+                    "SessionProvider.useEffect": function() {
+                        return clearInterval(refetchIntervalTimer);
+                    }
+                })["SessionProvider.useEffect"];
+            }
+        }
+    }["SessionProvider.useEffect"], [
+        refetchInterval,
+        shouldRefetch
+    ]);
+    var value = React.useMemo({
+        "SessionProvider.useMemo[value]": function() {
+            return {
+                data: session,
+                status: loading ? "loading" : session ? "authenticated" : "unauthenticated",
+                update: function update(data) {
+                    return (0, _asyncToGenerator2.default)(_regenerator.default.mark(function _callee2() {
+                        var newSession;
+                        return _regenerator.default.wrap(function _callee2$(_context2) {
+                            while(1)switch(_context2.prev = _context2.next){
+                                case 0:
+                                    if (!(loading || !session)) {
+                                        _context2.next = 2;
+                                        break;
+                                    }
+                                    return _context2.abrupt("return");
+                                case 2:
+                                    setLoading(true);
+                                    _context2.t0 = _utils.fetchData;
+                                    _context2.t1 = __NEXTAUTH;
+                                    _context2.t2 = logger;
+                                    _context2.next = 8;
+                                    return getCsrfToken();
+                                case 8:
+                                    _context2.t3 = _context2.sent;
+                                    _context2.t4 = data;
+                                    _context2.t5 = {
+                                        csrfToken: _context2.t3,
+                                        data: _context2.t4
+                                    };
+                                    _context2.t6 = {
+                                        body: _context2.t5
+                                    };
+                                    _context2.t7 = {
+                                        req: _context2.t6
+                                    };
+                                    _context2.next = 15;
+                                    return (0, _context2.t0)("session", _context2.t1, _context2.t2, _context2.t7);
+                                case 15:
+                                    newSession = _context2.sent;
+                                    setLoading(false);
+                                    if (newSession) {
+                                        setSession(newSession);
+                                        broadcast.post({
+                                            event: "session",
+                                            data: {
+                                                trigger: "getSession"
+                                            }
+                                        });
+                                    }
+                                    return _context2.abrupt("return", newSession);
+                                case 19:
+                                case "end":
+                                    return _context2.stop();
+                            }
+                        }, _callee2);
+                    }))();
+                }
+            };
+        }
+    }["SessionProvider.useMemo[value]"], [
+        session,
+        loading
+    ]);
+    return (0, _jsxRuntime.jsx)(SessionContext.Provider, {
+        value: value,
+        children: children
+    });
+}
+}),
+]);
+
+//# sourceMappingURL=_e9317f9d._.js.map
