@@ -108,7 +108,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\pc\\Desktop\\LMS-Front Site\\my-tailwind-app",
+    "outputFileTracingRoot": "C:\\Users\\pc\\Desktop\\LMS-Front Site\\github",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -300,11 +300,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "C:\\Users\\pc\\Desktop\\LMS-Front Site\\my-tailwind-app"
+      "root": "C:\\Users\\pc\\Desktop\\LMS-Front Site\\github"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\pc\\Desktop\\LMS-Front Site\\my-tailwind-app",
+  "appDir": "C:\\Users\\pc\\Desktop\\LMS-Front Site\\github",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

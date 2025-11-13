@@ -250,7 +250,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
                 Your roadmap to fluency
                 <br />
-                <span className="bg-gradient-to-r from-[#FFF7AE] via-[#FFE66D] to-[#FFF7AE] bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-[#FFF7AE] via-[#FFE66D] to-[#FFF7AE] bg-clip-text text-transparent">
                   and confidence
                 </span>{" "}
                 in English
