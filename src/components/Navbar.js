@@ -324,7 +324,7 @@ export default function Navbar() {
       </header>
 
       {/* Spacer for fixed navbar on desktop */}
-      {/* <div className="hidden lg:block h-24"></div> */}
+      <div className="hidden lg:block h-24"></div>
 
       <style jsx>{`
         @keyframes fadeIn {
