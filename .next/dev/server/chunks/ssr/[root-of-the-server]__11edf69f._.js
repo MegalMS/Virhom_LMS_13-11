@@ -530,6 +530,13 @@ function Navbar() {
                 lineNumber: 231,
                 columnNumber: 7
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "jsx-8dca918abf3713ba" + " " + "hidden lg:block h-24"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Navbar.js",
+                lineNumber: 327,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 id: "8dca918abf3713ba",
                 children: "@keyframes fadeIn{0%{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}.animate-fadeIn.jsx-8dca918abf3713ba{animation:.2s ease-out fadeIn}"
@@ -1499,7 +1506,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-// Simple animation component
+// Simple fade-in animation
 const FadeInDiv = ({ children, className, delay = 0 })=>{
     const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -1509,7 +1516,7 @@ const FadeInDiv = ({ children, className, delay = 0 })=>{
         delay
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} ${className}`,
+        className: `transition-all duration-700 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"} ${className}`,
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/Footer.js",
@@ -1540,13 +1547,13 @@ function Footer() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl mx-auto px-6 py-16 pt-20 relative z-10",
+                className: "max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 pt-20 relative z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8",
+                        className: "flex flex-col md:flex-row justify-between items-center md:items-start gap-12 md:gap-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
-                                className: "flex flex-col items-center md:items-start space-y-6 flex-1",
+                                className: "flex flex-col items-center md:items-start space-y-6 flex-1 w-full",
                                 delay: 100,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1565,7 +1572,7 @@ function Footer() {
                                                     fill: "#FFF7AE"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.js",
-                                                    lineNumber: 48,
+                                                    lineNumber: 56,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -1578,76 +1585,76 @@ function Footer() {
                                                     children: "AL"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.js",
-                                                    lineNumber: 49,
+                                                    lineNumber: 57,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Footer.js",
-                                            lineNumber: 47,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 46,
+                                        lineNumber: 48,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "space-y-3 text-center md:text-left",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center gap-2 text-[#FFF7AE] group cursor-pointer",
+                                                className: "flex items-center justify-center md:justify-start gap-2 text-[#FFF7AE] group cursor-pointer flex-wrap",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
                                                         size: 20,
                                                         className: "group-hover:scale-110 transition-transform"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 55,
+                                                        lineNumber: 72,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-lg font-medium group-hover:text-white transition-colors",
+                                                        className: "text-sm sm:text-lg font-medium group-hover:text-white transition-colors break-all",
                                                         children: "office@anglo-link.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 56,
+                                                        lineNumber: 76,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 54,
+                                                lineNumber: 71,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "w-full md:w-auto border-2 border-[#7B68EE] text-[#FFF7AE] px-6 py-3 rounded-xl hover:bg-[#7B68EE] hover:text-white transition-all duration-300 font-semibold hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2 group",
+                                                className: "w-full md:w-auto border-2 border-[#7B68EE] text-[#FFF7AE] px-4 py-2 sm:px-6 sm:py-3 rounded-xl hover:bg-[#7B68EE] hover:text-white transition-all duration-300 font-semibold hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2 group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
                                                         size: 18,
                                                         className: "group-hover:translate-x-1 transition-transform"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 62,
+                                                        lineNumber: 82,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Contact Us"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 61,
+                                                lineNumber: 81,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 53,
+                                        lineNumber: 70,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 45,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1657,81 +1664,81 @@ function Footer() {
                                         className: "w-px h-40 bg-gradient-to-b from-transparent via-[#7B68EE]/50 to-transparent"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 70,
+                                        lineNumber: 93,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#7B68EE] rounded-full"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 71,
+                                        lineNumber: 94,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 69,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
-                                className: "flex-1 text-center md:text-left space-y-5",
+                                className: "flex-1 text-center md:text-left space-y-5 w-full",
                                 delay: 200,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold text-[#FFF7AE] mb-4",
+                                        className: "text-xl sm:text-2xl font-bold text-[#FFF7AE] mb-2 sm:mb-4",
                                         children: "More"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 76,
+                                        lineNumber: 102,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "space-y-3",
+                                        className: "space-y-2 sm:space-y-3",
                                         children: [
-                                            'About',
-                                            'Acceptable Use Policy',
-                                            'Privacy & Cookie Policy',
-                                            'Terms of Use'
+                                            "About",
+                                            "Acceptable Use Policy",
+                                            "Privacy & Cookie Policy",
+                                            "Terms of Use"
                                         ].map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                     href: "#",
-                                                    className: "text-[#FFF7AE] hover:text-white transition-all duration-300 hover:translate-x-2 inline-block group relative",
+                                                    className: "text-[#FFF7AE] hover:text-white transition-all duration-300 hover:translate-x-2 inline-block group relative text-sm sm:text-base",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "relative z-10",
                                                             children: item
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 84,
+                                                            lineNumber: 117,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "absolute bottom-0 left-0 w-0 h-0.5 bg-[#FFF7AE] group-hover:w-full transition-all duration-300"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 85,
+                                                            lineNumber: 118,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Footer.js",
-                                                    lineNumber: 80,
+                                                    lineNumber: 113,
                                                     columnNumber: 19
                                                 }, this)
                                             }, idx, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 79,
+                                                lineNumber: 112,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 77,
+                                        lineNumber: 105,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 75,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1741,126 +1748,126 @@ function Footer() {
                                         className: "w-px h-40 bg-gradient-to-b from-transparent via-[#7B68EE]/50 to-transparent"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 94,
+                                        lineNumber: 127,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#7B68EE] rounded-full"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 95,
+                                        lineNumber: 128,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 93,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
-                                className: "flex-1 text-center md:text-left space-y-5",
+                                className: "flex-1 text-center md:text-left space-y-5 w-full",
                                 delay: 300,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold text-[#FFF7AE] mb-4",
+                                        className: "text-xl sm:text-2xl font-bold text-[#FFF7AE] mb-2 sm:mb-4",
                                         children: "Connect With Us"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 100,
+                                        lineNumber: 136,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex justify-center md:justify-start gap-4",
+                                        className: "flex justify-center md:justify-start gap-3 sm:gap-4 flex-wrap",
                                         children: [
                                             {
                                                 Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__["Facebook"],
-                                                color: 'hover:text-[#1877F2]'
+                                                color: "hover:text-[#1877F2]"
                                             },
                                             {
                                                 Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__["Youtube"],
-                                                color: 'hover:text-[#FF0000]'
+                                                color: "hover:text-[#FF0000]"
                                             },
                                             {
                                                 Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"],
-                                                color: 'hover:text-[#FFF7AE]'
+                                                color: "hover:text-[#FFF7AE]"
                                             },
                                             {
                                                 Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"],
-                                                color: 'hover:text-[#FFFFFF]'
+                                                color: "hover:text-[#FFFFFF]"
                                             }
                                         ].map(({ Icon, color }, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: "#",
-                                                className: `bg-white/10 backdrop-blur-sm p-3 rounded-xl ${color} transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg group`,
+                                                className: `bg-white/10 backdrop-blur-sm p-2 sm:p-3 rounded-xl ${color} transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg group`,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                                    className: "w-6 h-6 group-hover:scale-110 transition-transform"
+                                                    className: "w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.js",
-                                                    lineNumber: 113,
+                                                    lineNumber: 151,
                                                     columnNumber: 19
                                                 }, this)
                                             }, idx, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 108,
+                                                lineNumber: 146,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 101,
+                                        lineNumber: 139,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mt-6 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-[#7B68EE]/30",
+                                        className: "mt-4 sm:mt-6 bg-white/5 backdrop-blur-sm rounded-xl p-3 sm:p-4 border border-[#7B68EE]/30",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-sm text-[#FFF7AE] mb-3",
+                                                className: "text-xs sm:text-sm text-[#FFF7AE] mb-2 sm:mb-3",
                                                 children: "Stay updated with our latest news"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 120,
+                                                lineNumber: 158,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex gap-2",
+                                                className: "flex flex-col sm:flex-row gap-2",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                         type: "email",
                                                         placeholder: "Your email",
-                                                        className: "flex-1 px-4 py-2 bg-white/10 border border-[#7B68EE]/30 rounded-lg text-white placeholder-[#7B68EE]/50 focus:outline-none focus:border-[#FFF7AE] transition-all"
+                                                        className: "flex-1 px-3 sm:px-4 py-2 bg-white/10 border border-[#7B68EE]/30 rounded-lg text-white placeholder-[#7B68EE]/50 focus:outline-none focus:border-[#FFF7AE] transition-all text-sm"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 122,
+                                                        lineNumber: 162,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        className: "px-4 py-2 bg-gradient-to-r from-[#4169E1] to-[#7B68EE] rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300",
+                                                        className: "px-4 py-2 bg-gradient-to-r from-[#4169E1] to-[#7B68EE] rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 flex justify-center",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
                                                             size: 18
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Footer.js",
-                                                            lineNumber: 128,
+                                                            lineNumber: 168,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.js",
-                                                        lineNumber: 127,
+                                                        lineNumber: 167,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 121,
+                                                lineNumber: 161,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 119,
+                                        lineNumber: 157,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 99,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1870,7 +1877,7 @@ function Footer() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-12 mb-8 relative",
+                        className: "mt-10 sm:mt-12 mb-6 sm:mb-8 relative",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 flex items-center",
@@ -1878,12 +1885,12 @@ function Footer() {
                                     className: "w-full border-t border-[#7B68EE]/30"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.js",
-                                    lineNumber: 138,
+                                    lineNumber: 178,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 137,
+                                lineNumber: 177,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1897,75 +1904,75 @@ function Footer() {
                                                 className: "w-2 h-2 bg-[#7B68EE] rounded-full animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 143,
+                                                lineNumber: 183,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-2 h-2 bg-[#4169E1] rounded-full animate-pulse",
                                                 style: {
-                                                    animationDelay: '0.2s'
+                                                    animationDelay: "0.2s"
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 144,
+                                                lineNumber: 184,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-2 h-2 bg-[#FFF7AE] rounded-full animate-pulse",
                                                 style: {
-                                                    animationDelay: '0.4s'
+                                                    animationDelay: "0.4s"
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.js",
-                                                lineNumber: 145,
+                                                lineNumber: 188,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.js",
-                                        lineNumber: 142,
+                                        lineNumber: 182,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.js",
-                                    lineNumber: 141,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 140,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Footer.js",
-                        lineNumber: 136,
+                        lineNumber: 176,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeInDiv, {
-                        className: "text-center space-y-3 mb-8",
+                        className: "text-center space-y-2 sm:space-y-3 mb-6 sm:mb-8",
                         delay: 400,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "text-2xl font-bold text-[#FFF7AE]",
+                                className: "text-xl sm:text-2xl font-bold text-[#FFF7AE]",
                                 children: "VirHom"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 153,
+                                lineNumber: 199,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[#FFF7AE] italic",
+                                className: "text-[#FFF7AE] italic text-sm sm:text-base",
                                 children: "Your journey to English fluency starts here"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Footer.js",
-                                lineNumber: 154,
+                                lineNumber: 200,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Footer.js",
-                        lineNumber: 152,
+                        lineNumber: 198,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1975,42 +1982,42 @@ function Footer() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-gradient-to-r from-[#1a3a7a] via-[#152d63] to-[#1a3a7a] py-5 text-center relative border-t border-[#7B68EE]/20",
+                className: "bg-gradient-to-r from-[#1a3a7a] via-[#152d63] to-[#1a3a7a] py-4 sm:py-5 text-center relative border-t border-[#7B68EE]/20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative z-10",
+                    className: "relative z-10 px-2",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-[#7B68EE] text-sm font-medium",
+                            className: "text-[#7B68EE] text-xs sm:text-sm font-medium",
                             children: "VirHom Languages © 2025 All Rights Reserved"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Footer.js",
-                            lineNumber: 161,
+                            lineNumber: 209,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-[#4169E1] text-xs mt-1",
+                            className: "text-[#4169E1] text-[10px] sm:text-xs mt-1",
                             children: "Crafted with passion for language learners worldwide"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Footer.js",
-                            lineNumber: 164,
+                            lineNumber: 212,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Footer.js",
-                    lineNumber: 160,
+                    lineNumber: 208,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Footer.js",
-                lineNumber: 159,
+                lineNumber: 207,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FFF7AE] to-transparent"
             }, void 0, false, {
                 fileName: "[project]/src/components/Footer.js",
-                lineNumber: 171,
+                lineNumber: 219,
                 columnNumber: 7
             }, this)
         ]
@@ -2020,6 +2027,162 @@ function Footer() {
         columnNumber: 5
     }, this);
 } // "use client";
+ // import { useState, useEffect } from 'react';
+ // import { Facebook, Youtube, Globe, X, Mail, Send } from 'lucide-react';
+ // // Simple animation component
+ // const FadeInDiv = ({ children, className, delay = 0 }) => {
+ //   const [isVisible, setIsVisible] = useState(false);
+ //   useEffect(() => {
+ //     const timer = setTimeout(() => setIsVisible(true), delay);
+ //     return () => clearTimeout(timer);
+ //   }, [delay]);
+ //   return (
+ //     <div
+ //       className={`transition-all duration-700 ease-out ${
+ //         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+ //       } ${className}`}
+ //     >
+ //       {children}
+ //     </div>
+ //   );
+ // };
+ // export default function Footer() {
+ //   return (
+ //     <div className="bg-gradient-to-br from-[#4169E1] via-[#2d5aad] to-[#1a3a7a] text-white relative overflow-hidden">
+ //       {/* Decorative Background Pattern */}
+ //       <div className="absolute inset-0 opacity-5">
+ //         <div
+ //           className="absolute inset-0"
+ //           style={{
+ //             backgroundImage: `radial-gradient(circle at 30% 20%, rgba(255,255,255,0.3) 0%, transparent 50%),
+ //                            radial-gradient(circle at 70% 80%, rgba(255,255,255,0.2) 0%, transparent 50%)`,
+ //           }}
+ //         ></div>
+ //       </div>
+ //       {/* Main Content */}
+ //       <div className="max-w-7xl mx-auto px-6 py-16 pt-20 relative z-10">
+ //         <div className="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8">
+ //           {/* Left Section - Brand */}
+ //           <FadeInDiv className="flex flex-col items-center md:items-start space-y-6 flex-1" delay={100}>
+ //             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+ //               <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+ //                 <circle cx="27.5" cy="27.5" r="27.5" fill="#FFF7AE"/>
+ //                 <text x="27.5" y="35" fontSize="24" fontWeight="bold" fill="#4169E1" textAnchor="middle">AL</text>
+ //               </svg>
+ //             </div>
+ //             <div className="space-y-3 text-center md:text-left">
+ //               <div className="flex items-center gap-2 text-[#FFF7AE] group cursor-pointer">
+ //                 <Mail size={20} className="group-hover:scale-110 transition-transform" />
+ //                 <p className="text-lg font-medium group-hover:text-white transition-colors">
+ //                   office@anglo-link.com
+ //                 </p>
+ //               </div>
+ //               <button className="w-full md:w-auto border-2 border-[#7B68EE] text-[#FFF7AE] px-6 py-3 rounded-xl hover:bg-[#7B68EE] hover:text-white transition-all duration-300 font-semibold hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2 group">
+ //                 <Send size={18} className="group-hover:translate-x-1 transition-transform" />
+ //                 Contact Us
+ //               </button>
+ //             </div>
+ //           </FadeInDiv>
+ //           {/* Decorative Divider */}
+ //           <div className="hidden md:block relative">
+ //             <div className="w-px h-40 bg-gradient-to-b from-transparent via-[#7B68EE]/50 to-transparent"></div>
+ //             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#7B68EE] rounded-full"></div>
+ //           </div>
+ //           {/* Middle Section - Links */}
+ //           <FadeInDiv className="flex-1 text-center md:text-left space-y-5" delay={200}>
+ //             <h3 className="text-2xl font-bold text-[#FFF7AE] mb-4">More</h3>
+ //             <ul className="space-y-3">
+ //               {['About', 'Acceptable Use Policy', 'Privacy & Cookie Policy', 'Terms of Use'].map((item, idx) => (
+ //                 <li key={idx}>
+ //                   <a 
+ //                     href="#" 
+ //                     className="text-[#FFF7AE] hover:text-white transition-all duration-300 hover:translate-x-2 inline-block group relative"
+ //                   >
+ //                     <span className="relative z-10">{item}</span>
+ //                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FFF7AE] group-hover:w-full transition-all duration-300"></span>
+ //                   </a>
+ //                 </li>
+ //               ))}
+ //             </ul>
+ //           </FadeInDiv>
+ //           {/* Decorative Divider */}
+ //           <div className="hidden md:block relative">
+ //             <div className="w-px h-40 bg-gradient-to-b from-transparent via-[#7B68EE]/50 to-transparent"></div>
+ //             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#7B68EE] rounded-full"></div>
+ //           </div>
+ //           {/* Right Section - Social */}
+ //           <FadeInDiv className="flex-1 text-center md:text-left space-y-5" delay={300}>
+ //             <h3 className="text-2xl font-bold text-[#FFF7AE] mb-4">Connect With Us</h3>
+ //             <div className="flex justify-center md:justify-start gap-4">
+ //               {[
+ //                 { Icon: Facebook, color: 'hover:text-[#1877F2]' },
+ //                 { Icon: Youtube, color: 'hover:text-[#FF0000]' },
+ //                 { Icon: Globe, color: 'hover:text-[#FFF7AE]' },
+ //                 { Icon: X, color: 'hover:text-[#FFFFFF]' }
+ //               ].map(({ Icon, color }, idx) => (
+ //                 <a
+ //                   key={idx}
+ //                   href="#"
+ //                   className={`bg-white/10 backdrop-blur-sm p-3 rounded-xl ${color} transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg group`}
+ //                 >
+ //                   <Icon className="w-6 h-6 group-hover:scale-110 transition-transform" />
+ //                 </a>
+ //               ))}
+ //             </div>
+ //             {/* Newsletter Signup */}
+ //             <div className="mt-6 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-[#7B68EE]/30">
+ //               <p className="text-sm text-[#FFF7AE] mb-3">Stay updated with our latest news</p>
+ //               <div className="flex gap-2">
+ //                 <input 
+ //                   type="email" 
+ //                   placeholder="Your email" 
+ //                   className="flex-1 px-4 py-2 bg-white/10 border border-[#7B68EE]/30 rounded-lg text-white placeholder-[#7B68EE]/50 focus:outline-none focus:border-[#FFF7AE] transition-all"
+ //                 />
+ //                 <button className="px-4 py-2 bg-gradient-to-r from-[#4169E1] to-[#7B68EE] rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+ //                   <Send size={18} />
+ //                 </button>
+ //               </div>
+ //             </div>
+ //           </FadeInDiv>
+ //         </div>
+ //         {/* Decorative Line */}
+ //         <div className="mt-12 mb-8 relative">
+ //           <div className="absolute inset-0 flex items-center">
+ //             <div className="w-full border-t border-[#7B68EE]/30"></div>
+ //           </div>
+ //           <div className="relative flex justify-center">
+ //             <div className="bg-gradient-to-br from-[#4169E1] to-[#1a3a7a] px-4">
+ //               <div className="flex gap-2">
+ //                 <div className="w-2 h-2 bg-[#7B68EE] rounded-full animate-pulse"></div>
+ //                 <div className="w-2 h-2 bg-[#4169E1] rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+ //                 <div className="w-2 h-2 bg-[#FFF7AE] rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+ //               </div>
+ //             </div>
+ //           </div>
+ //         </div>
+ //         {/* Tagline */}
+ //         <FadeInDiv className="text-center space-y-3 mb-8" delay={400}>
+ //           <h4 className="text-2xl font-bold text-[#FFF7AE]">VirHom</h4>
+ //           <p className="text-[#FFF7AE] italic">Your journey to English fluency starts here</p>
+ //         </FadeInDiv>
+ //       </div>
+ //       {/* Bottom Bar */}
+ //       <div className="bg-gradient-to-r from-[#1a3a7a] via-[#152d63] to-[#1a3a7a] py-5 text-center relative border-t border-[#7B68EE]/20">
+ //         <div className="relative z-10">
+ //           <p className="text-[#7B68EE] text-sm font-medium">
+ //             VirHom Languages © 2025 All Rights Reserved
+ //           </p>
+ //           <p className="text-[#4169E1] text-xs mt-1">
+ //             Crafted with passion for language learners worldwide
+ //           </p>
+ //         </div>
+ //       </div>
+ //       {/* Bottom Decorative Element */}
+ //       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FFF7AE] to-transparent"></div>
+ //     </div>
+ //   );
+ // }
+ // "use client";
  // import React, { useState, useEffect } from 'react';
  // import { Facebook, Youtube, Globe, X, Mail, Send } from "lucide-react";
  // // Simple animation component

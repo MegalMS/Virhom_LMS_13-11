@@ -12,8 +12,6 @@ import {
   Sparkles,
   Zap,
   Award,
-} from "lucide-react";
-import {
   FileText,
   Play,
   Edit,
@@ -23,6 +21,8 @@ import {
   WifiOff,
   LifeBuoy,
 } from "lucide-react";
+;
+
 
 // Enhanced Motion Component with Intersection Observer
 const MotionDiv = ({ children, className = "", delay = 0, animation = "fade-up" }) => {
